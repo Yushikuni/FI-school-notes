@@ -16,6 +16,15 @@
 | 0002 | w pro ostatní |
 | 0001 | x pro ostatní |
 
+**rwxrwxrwx	(0777)***
+Tato kombinace znamená, že jsou nastavena práva pro čtení, zápis a spuštění pro vlastníka (7), skupinu (7) i ostatní (7). Jednotlivé hodnoty práv se sčítají, čili (4 + 2 + 1 = 7, což odpovídá nastavenému rwx)
+
+**r-xrw-r--	(0564)**
+Pro jednotlivé části si vysvětlíme:
+r + x = 5
+r + w = 6
+r = 4
+
 ### Vybrané příklady z laboratoře
 -----------
 33)
