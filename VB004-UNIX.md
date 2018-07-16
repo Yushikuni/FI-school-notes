@@ -3,22 +3,18 @@
 
 | Bitový zápis | Význam |
 | ----- | ------ |
-| 4000 | SUID |
-| 2000 | SGID |
+| 4000 | SUID bit |
+| 2000 | SGID bit |
 | 1000 | sticky bit |
-
-0400 r pro vlastníka
-0200 w pro vlastníka
-0100 x pro vlastníka
-
-0040 r pro skupinu vlastníků
-0020 w pro skupinu vlastníků
-0010 x pro vlastníků
-
-0004 r pro ostatní
-0002 w pro ostatní
-0001 x pro ostatní
-
+| 0400 | r pro vlastníka |
+| 0200 | w pro vlastníka |
+| 0100 | x pro vlastníka |
+| 0040 | r pro skupinu vlastníků |
+| 0020 | w pro skupinu vlastníků |
+| 0010 | x pro vlastníků |
+| 0004 | r pro ostatní |
+| 0002 | w pro ostatní |
+| 0001 | x pro ostatní |
 
 ### Vybrané příklady z laboratoře
 -----------
