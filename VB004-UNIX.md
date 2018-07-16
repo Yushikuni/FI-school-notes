@@ -21,25 +21,25 @@
 **rwxrwxrwx	(0777)**<br/>
 Tato kombinace znamená, že jsou nastavena práva pro čtení, zápis a spuštění pro vlastníka (7), skupinu (7) i ostatní (7). Jednotlivé hodnoty práv se sčítají, čili (4 + 2 + 1 = 7, což odpovídá nastavenému rwx)
 
-**r-xrw-r--	(0564)**
+**r-xrw-r--	(0564)**<br/>
 Pro jednotlivé části si vysvětlíme:
 - r + x = 5
 - r + w = 6
 - r = 4
 
-**r-srw-r-- (4564)**
+**r-srw-r-- (4564)**<br/>
 Malé S (s) v části pro práva vlastníka určuje, že je nastaven SUID bit, který změnil hodnotu na začátku z 0 na 4. Jednotlivá “s” se vstahují vždy k právu execute (x) a nahrazují tedy pouze x, nikoliv třeba w či r.
 
-**r-Srw-r--	(4464)**
+**r-Srw-r--	(4464)**<br/>
 Velké S (S) v části pro práva vlastníka určuje, že je nastaven SUID bit, který změnil hodnotu na začátku z 0 na 4. **Avšak** velká písmena se nezapočítávají do jednotlivých hodnot trojic bitů pro vyjádření práv, mění pouze hodnotu první trojice bitů, proto je zde 4 namísto 5 v druhé trojici bitů, reprezentující práva vlastníka.
 
-**r-xrw-r-t	(1565)**
+**r-xrw-r-t	(1565)**<br/>
 Malé T (t) reprezentuje sticky bit. Uvádí se vždy u práv pro ostatní.
 
-**r-xrw-r-T (1564)**
+**r-xrw-r-T (1564)**<br/>
 Velké T (T) funguje naprosto stejně jako S u SUID či SGID, ovlivňuje tedy hodnotu první trojice bitů, ale neovlivňuje hodnotu trojice bitů pro ostatní.
 
-**r-sr-Sr-x (6545)**
+**r-sr-Sr-x (6545)**<br/>
 SUID a SGID nám nastavili prvního hodnotu na 6 (4 + 2).
 
 
