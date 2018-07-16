@@ -1,4 +1,4 @@
-### Laboratory:
+### Vybrané příklady z laboratoře
 -----------
 33)
 
