@@ -55,3 +55,23 @@ else
    echo "ok 97e1c2733a0db9322259" && exit 0;
 fi
 ```
+
+36)
+```
+#!/bin/bash
+
+source="${1}"
+shift
+touch "$source"
+
+counter=1
+
+for arg
+do
+   content=`cat $arg`
+   filename=`basename $arg`
+   echo "-- ${counter}. $filename 439b5a77728742dd14ff" >> "$source"
+   echo "$content" >> "$source"
+   counter=$((counter+1))
+done
+```
