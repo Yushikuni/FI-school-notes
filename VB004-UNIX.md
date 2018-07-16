@@ -16,7 +16,7 @@
 | 0002 | w pro ostatní |
 | 0001 | x pro ostatní |
 
-##### Příklady:
+#### Příklady:
 **rwxrwxrwx	(0777)**
 Tato kombinace znamená, že jsou nastavena práva pro čtení, zápis a spuštění pro vlastníka (7), skupinu (7) i ostatní (7). Jednotlivé hodnoty práv se sčítají, čili (4 + 2 + 1 = 7, což odpovídá nastavenému rwx)
 
