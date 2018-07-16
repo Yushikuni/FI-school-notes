@@ -43,3 +43,15 @@ do
    mv "$var" "${var%.077}.e2f"
 done
 ```
+
+35)
+
+```
+#!/bin/bash
+if [ "$#" -ne "4" ]
+then
+   echo "Error" >&2 && exit 1;
+else
+   echo "ok 97e1c2733a0db9322259" && exit 0;
+fi
+```
