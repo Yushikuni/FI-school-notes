@@ -33,3 +33,13 @@ case "$option" in
    ;;
 esac
 ```
+
+34)
+
+```shell
+#!/bin/bash
+for var in "$@"
+do
+   mv "$var" "${var%.077}.e2f"
+done
+```
