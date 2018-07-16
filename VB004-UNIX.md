@@ -1,4 +1,4 @@
-### Osmičkový popis práv
+## Osmičkový popis práv
 -----------
 
 | Bitový zápis | Význam |
@@ -16,7 +16,7 @@
 | 0002 | w pro ostatní |
 | 0001 | x pro ostatní |
 
-#### Příklady:
+### Příklady:
 
 **rwxrwxrwx	(0777)**<br/>
 Tato kombinace znamená, že jsou nastavena práva pro čtení, zápis a spuštění pro vlastníka (7), skupinu (7) i ostatní (7). Jednotlivé hodnoty práv se sčítají, čili (4 + 2 + 1 = 7, což odpovídá nastavenému rwx)
@@ -43,7 +43,7 @@ Velké T (T) funguje naprosto stejně jako S u SUID či SGID, ovlivňuje tedy ho
 SUID a SGID nám nastavili prvního hodnotu na 6 (4 + 2).
 
 
-### Vybrané příklady z laboratoře
+## Vybrané příklady z laboratoře
 -----------
 33)
 
