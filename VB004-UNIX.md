@@ -1,7 +1,7 @@
 ### Osmičkový popis práv
 -----------
 
-| **Bitový zápis** | ** Význam ** |
+| Bitový zápis | Význam |
 | ----- | ------ |
 | 4000 | SUID |
 | 2000 | SGID |
