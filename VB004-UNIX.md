@@ -47,6 +47,9 @@ SUID a SGID nám nastavili prvního hodnotu na 6 (4 + 2).
 -----------
 23)
 ```
+PV004LAB=$HOME/pv004lab
+KLIC=548dc
+UKOL=pro
 ```
 
 33)
