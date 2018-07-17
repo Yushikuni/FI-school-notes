@@ -55,6 +55,9 @@ ROOTDIR=$PV004LAB/ukol_${UKOL}_$KLIC
 
 test "$ROOTDIR" = "/home/xuser1/pv004lab/ukol_pro_548dc" && echo ano
 
+mkdir $ROOTDIR
+cd $ROOTDIR
+
 ```
 
 33)
