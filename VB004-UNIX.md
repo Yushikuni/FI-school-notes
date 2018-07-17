@@ -50,6 +50,11 @@ SUID a SGID nám nastavili prvního hodnotu na 6 (4 + 2).
 PV004LAB=$HOME/pv004lab
 KLIC=548dc
 UKOL=pro
+
+ROOTDIR=$PV004LAB/ukol_${UKOL}_$KLIC
+
+test "$ROOTDIR" = "/home/xuser1/pv004lab/ukol_pro_548dc" && echo ano
+
 ```
 
 33)
