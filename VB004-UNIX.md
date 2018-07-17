@@ -45,6 +45,10 @@ SUID a SGID nám nastavili prvního hodnotu na 6 (4 + 2).
 
 ## Vybrané příklady z laboratoře
 -----------
+23)
+```
+```
+
 33)
 
 ```shell
