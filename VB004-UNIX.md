@@ -62,14 +62,14 @@ echo 'ROOTDIR=$PV004LAB/ukol_${UKOL}_$KLIC' > 48c6e
 ```
 
 26)
-1) Vytvoř si kliknutím ty adresáře
-2) Přemísti se do adresáře a
-3) Použij echo $SMAZANO
-4) Pokud vypíše prázdný řádek, pak je v pohodě, jinak vymaž obsah $SMAZANO pomocí příkazu unset SMAZANO
-5) Napiš příkaz: grep lock * > /dev/null || { SMAZANO=$PWD; rm $SMAZANO/`ls | grep smaz | grep -v nesmaz`; };
-6) Napiš příkaz set > promene_be5
-7) Napiš příkaz unset SMAZANO
-8) Opakuj krom 5 - 7 pro adresáře b a c
+1. Vytvoř si kliknutím ty adresáře
+2. Přemísti se do adresáře a
+3. Použij echo $SMAZANO
+4. Pokud vypíše prázdný řádek, pak je v pohodě, jinak vymaž obsah $SMAZANO pomocí příkazu unset SMAZANO
+5. Napiš příkaz: grep lock * > /dev/null || { SMAZANO=$PWD; rm $SMAZANO/`ls | grep smaz | grep -v nesmaz`; };
+6. Napiš příkaz set > promene_be5
+7. Napiš příkaz unset SMAZANO
+8. Opakuj krom 5 - 7 pro adresáře b a c
 
 33)
 
