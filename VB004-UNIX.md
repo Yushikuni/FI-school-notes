@@ -61,6 +61,16 @@ cd $ROOTDIR
 echo 'ROOTDIR=$PV004LAB/ukol_${UKOL}_$KLIC' > 48c6e
 ```
 
+26)
+Vytvoř si kliknutím ty adresáře
+Přemísti se do adresáře a
+Použij echo $SMAZANO
+Pokud vypíše prázdný řádek, pak je v pohodě, jinak vymaž obsah $SMAZANO pomocí příkazu unset SMAZANO
+Napiš příkaz: grep lock * > /dev/null || { SMAZANO=$PWD; rm $SMAZANO/`ls | grep smaz | grep -v nesmaz`; };
+Napiš příkaz set > promene_be5
+Napiš příkaz unset SMAZANO
+Opakuj krom 5 - 7 pro adresáře b a c
+
 33)
 
 ```shell
