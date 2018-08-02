@@ -6,3 +6,7 @@
 - klíčové slovo *def*
 - jako řídící struktura následuje po názvu dvojtečka
 - př.
+```python
+def myFunction():
+	print "Hello world!";
+```
