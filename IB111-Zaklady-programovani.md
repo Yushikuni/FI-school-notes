@@ -10,3 +10,8 @@
 def myFunction():
 	print "Hello world!";
 ```
+
+### Podmínky:
+- klíčové slovo *if*
+- pro porovnávání s pravdivostními hodnotami *true* a *false* používáme klíčové slovo *is*
+- pokud použijeme klíčové slovo *is* mezi dvěma proměnnými, tak zjišťujeme identitu objektů
