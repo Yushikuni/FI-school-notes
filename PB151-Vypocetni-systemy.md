@@ -37,3 +37,12 @@ udaja6	db
 	INR L
 konec45	HLT
 ```
+
+**54) Assembler: zvýšení hodnoty proměnné o jedničku**
+```assembly
+udaj7c	db
+	LDA udaj7c
+	ADI 1
+	STA udaj7c
+konec0b	HLT
+```
