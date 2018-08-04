@@ -77,3 +77,14 @@ cislo	db	255
 	mov	d, a						
 konec2c	HLT
 ```
+
+**57) Asembler: změna znaménka bajtové proměnné**
+```assembly
+cislo3f	db	
+	lda	cislo3f
+	cma
+	inr a
+ 
+	sta cislo3f
+konec98	hlt
+```
