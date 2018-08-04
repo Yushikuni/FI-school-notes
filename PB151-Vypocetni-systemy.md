@@ -1,6 +1,6 @@
 ## Laboratoř předmětu PB151 - Výpočetní systémy
 
-**50) Assembler: piřazovací řádek**
+**50) Assembler: přiřazovací příkaz**
 ```assembly
 y8b	db
 xa3	db
