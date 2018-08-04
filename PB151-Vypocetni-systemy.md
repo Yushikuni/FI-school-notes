@@ -46,3 +46,21 @@ udaj7c	db
 	STA udaj7c
 konec0b	HLT
 ```
+
+**55) Asembler: sčítání bajtových hodnot**
+```assembly
+suma77	db
+scitd9	db
+scit7d	db
+B	db
+C	db
+	LDA scitd9
+	MOV B, A
+	LDA scit7d
+	MOV C, A
+	LDA suma77
+	ADD B
+	ADD C
+	STA suma77
+konec1c	HLT
+```
