@@ -64,3 +64,16 @@ C	db
 	STA suma77
 konec1c	HLT
 ```
+
+**56) Asembler: inverze bitů obsahu registru**
+```assembly
+cislo79	db
+cislo	db	255
+	lda	cislo79
+	mov	b, a	
+	lda	cislo	
+	xra	b
+	mov	b, a
+	mov	d, a						
+konec2c	HLT
+```
