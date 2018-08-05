@@ -1,6 +1,6 @@
 ## Laboratoř předmětu PB151 - Výpočetní systémy
 
-**50) Assembler: přiřazovací příkaz**
+**50) Asembler: přiřazovací příkaz**
 ```assembly
 y8b	db
 xa3	db
@@ -8,7 +8,7 @@ xa3	db
 	STA y8b
 konec1d	hlt
 ```
-**51) Assembler: vložení konstanty do registru**
+**51) Asembler: vložení konstanty do registru**
 ```assembly
 y8b	db
 xa3	db
@@ -17,7 +17,7 @@ xa3	db
 konec1d	hlt
 ```
 
-**52) Assembler: přesuny mezi registry**
+**52) Asembler: přesuny mezi registry**
 ```assembly
 vzor80d	db
 	LDA vzor80d
@@ -29,7 +29,7 @@ vzor80d	db
 konecae	HLT
 ```
 
-**53) Assembler: zvýšení hodnoty registru o jedničku (inkrementace)**
+**53) Asembler: zvýšení hodnoty registru o jedničku (inkrementace)**
 ```assembly
 udaja6	db
 	LDA udaja6
@@ -38,7 +38,7 @@ udaja6	db
 konec45	HLT
 ```
 
-**54) Assembler: zvýšení hodnoty proměnné o jedničku**
+**54) Asembler: zvýšení hodnoty proměnné o jedničku**
 ```assembly
 udaj7c	db
 	LDA udaj7c
