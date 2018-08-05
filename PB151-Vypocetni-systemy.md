@@ -88,3 +88,10 @@ cislo3f	db
 	sta cislo3f
 konec98	hlt
 ```
+**58) Asembler: nastavování příznaků SF a ZF**
+```assembly
+cislo70	db
+	LDA cislo70
+	ADI 0
+konec8c	HLT
+```
