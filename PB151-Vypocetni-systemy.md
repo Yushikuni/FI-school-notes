@@ -126,3 +126,18 @@ abcd	db	12
 
 konec9a	hlt
 ```
+
+**62) Asembler: testování shody**
+```assembly
+x07a	db
+ydf0	db
+	lda	x07a
+	mov	b, a
+	lda	ydf0
+	cmp	b
+	jnz	shoda
+	inr	e
+shoda   add	e
+
+konec86	HLT
+```
