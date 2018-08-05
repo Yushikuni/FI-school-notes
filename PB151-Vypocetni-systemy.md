@@ -95,3 +95,22 @@ cislo70	db
 	ADI 0
 konec8c	HLT
 ```
+
+**59) Asembler: nastavení příznaku CF a vynulování AF**
+```assembly
+cislo88	db	0e6h
+cislo	db	e0h
+	lda cislo
+	mov b, a
+	lda cislo88
+	add b
+konec80	hlt
+```
+
+**60) Asembler: vynulování příznaku CF a nastavení AF**
+```assembly
+cislo80    db 0b2h
+    lda cislo80
+    adi 15
+konec09    hlt
+```
