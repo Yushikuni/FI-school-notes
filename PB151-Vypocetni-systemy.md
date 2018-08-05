@@ -114,3 +114,15 @@ cislo80    db 0b2h
     adi 15
 konec09    hlt
 ```
+
+**61) Asembler: nastavení příznaku parity**
+```assembly
+argh	db	3
+abcd	db	12
+	lda	argh
+	mov	b, a		
+	lda	abcd
+	add	b
+
+konec9a	hlt
+```
