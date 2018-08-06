@@ -156,3 +156,31 @@ shoda   add	d
 
 konecff	HLT
 ```
+
+**64) Asembler: testování shody**
+```assembly
+x07a	db
+ydf0	db
+	lda	x07a
+	mov	b, a
+	lda	ydf0
+	cmp	b
+	jnz	shoda
+	inr	e
+shoda   add	e
+
+konec86	HLT
+```
+
+**65) Asembler: detekce přeplnění při sčítání celých čísel bez znaménka**
+```assembly
+x312	db
+y49d	db	
+	lda	x312
+	mov	b, a
+	lda	y49d
+	add	b
+	jnc 	konecce
+ovrflw4	HLT
+konecce	HLT
+```
