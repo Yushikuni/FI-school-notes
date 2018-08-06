@@ -141,3 +141,18 @@ shoda   add	e
 
 konec86	HLT
 ```
+
+**63) Asembler: testování neshody**
+```assembly
+x4da	db
+y1d1	db
+	lda	x4da
+	mov	c, a
+	lda	y1d1
+	cmp	c
+	jz	shoda
+	inr	d
+shoda   add	d
+
+konecff	HLT
+```
