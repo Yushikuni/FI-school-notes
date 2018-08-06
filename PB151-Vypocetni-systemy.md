@@ -198,3 +198,19 @@ yfdd	db
 ovrflwc	HLT
 koneccb	HLT
 ```
+
+**67) Asembler: testování menší nebo rovno (znaménkem výsledku)**
+```assembly
+xd92	db	
+y54a	db
+	lda	xd92
+	mov	c, a
+	lda	y54a
+	cmp	c
+	jm	koneccc
+bud	mov	a, l
+	cma
+	mov	l, a
+	
+koneccc	HLT
+```
