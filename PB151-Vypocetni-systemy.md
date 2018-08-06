@@ -214,3 +214,20 @@ bud	mov	a, l
 	
 koneccc	HLT
 ```
+
+**68) Asembler: testování ostře větší než (znaménkem výsledku)**
+```assembly
+xe96	db
+y2c4	db
+	lda	xe96
+	mov	b, a
+	lda	y2c4
+	cmp	b
+	jp	konecfe
+anebo:	mov	a, l
+	cma
+	inr	a
+	mov	l, a
+	
+konecfe	HLT
+```
