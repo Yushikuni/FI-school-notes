@@ -184,3 +184,17 @@ y49d	db
 ovrflw4	HLT
 konecce	HLT
 ```
+
+**66) Asembler: detekce přeplnění při odčítání celých čísel bez znaménka**
+```assembly
+x978	db
+yfdd	db
+	lda	yfdd
+	mov	b, a
+	lda	x978
+	sub	b
+	jnc	koneccb
+
+ovrflwc	HLT
+koneccb	HLT
+```
