@@ -268,3 +268,26 @@ nebud	lda	xc52
 ovrflw9	HLT
 konec98	HLT
 ```
+
+**71) Asembler: porovnání velikosti čísel se znaménkem**
+```assembly
+	adv of
+x2e3	db
+ydee	db
+ano	db	1
+ne	db	2
+	lda	ydee
+	mov	b, a
+	lda 	x2e3
+	cmp	b
+	JLE	bud
+nebud	lda	ne
+	mov	e, a
+	jmp	ne62
+bud	lda	ano
+	mov	e, a
+	jmp	ano62
+
+ano62	HLT
+ne62	HLT
+```
