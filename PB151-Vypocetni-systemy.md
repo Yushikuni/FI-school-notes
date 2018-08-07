@@ -316,3 +316,32 @@ ne62	HLT
 
 konec15	HLT
 ```
+
+**74) Asembler: sčítání 16bitových čísel**
+```assembly
+xlow64	db
+xhigh64	db
+ylow64	db
+yhigh64	db
+zlow64	db
+zhigh64	db
+	lda	xlow64
+	mov	b, a
+	lda	xhigh64
+	mov	c, a
+	lda	ylow64
+	mov	d, a
+	lda	yhigh64
+	mov	e, a
+	lda	zlow64
+	mov	h, a
+	lda	zhigh64
+	mov	l, a
+	lda	xlow64
+	add	d
+	sta	zlow64
+	lda	xhigh64
+	adc	e
+	sta	zhigh64
+konec86	HLT
+```
