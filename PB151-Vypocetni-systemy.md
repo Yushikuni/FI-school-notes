@@ -231,3 +231,21 @@ anebo:	mov	a, l
 	
 konecfe	HLT
 ```
+
+**69) Asembler: testování větší nebo rovno (znaménkem výsledku)**
+```assembly
+xe88	db	
+yd54	db	
+zvys	db	69		
+	lda	zvys	
+	mov	d, a
+	lda	yd54
+	mov	b, a
+	lda	xe88
+	cmp	b
+	jm	konecf3
+anebo:	mov 	a, e
+	ADI	156
+	mov	e, a
+konecf3	HLT
+```
