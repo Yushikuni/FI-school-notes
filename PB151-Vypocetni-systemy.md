@@ -269,7 +269,22 @@ ovrflw9	HLT
 konec98	HLT
 ```
 
-**71) Asembler: porovnání velikosti čísel se znaménkem**
+**71) Asembler: porovnání velikosti čísel bez znaménka**
+```assembly
+	adv of
+xd50	db
+yebc	db
+	lda	xd50
+	mov	b, a
+	lda	yebc
+	cmp	b
+	jae	ano54
+ne54	HLT
+ano54	HLT
+```
+
+
+**72) Asembler: porovnání velikosti čísel se znaménkem**
 ```assembly
 	adv of
 x2e3	db
