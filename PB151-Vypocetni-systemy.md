@@ -249,3 +249,22 @@ anebo:	mov 	a, e
 	mov	e, a
 konecf3	HLT
 ```
+
+**70) Asembler: detekce přeplnění při sčítání celých čísel se znaménkem**
+```assembly
+	adv	of	
+xc52	db
+y10d	db
+	lda	xc52
+	mov	b, a
+	lda	y10d
+	add	b
+	jo	ovrflw9
+nebud	lda	xc52
+	cma	a
+	inr	a
+	sta	xc52
+	jmp	konec98
+ovrflw9	HLT
+konec98	HLT
+```
