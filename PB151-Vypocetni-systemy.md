@@ -306,3 +306,13 @@ bud	lda	ano
 ano62	HLT
 ne62	HLT
 ```
+
+**73) Asembler: použití registrů H, L a M**
+```assembly
+	LXI	H, 46944
+	MOV	M, E
+	LXI	H, 5465
+	MOV	A, M
+
+konec15	HLT
+```
