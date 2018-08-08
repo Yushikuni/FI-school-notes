@@ -364,3 +364,13 @@ pridani	mvi m , 30
 	jmp zacatek	
 konecee	hlt
 ```
+
+**76) Asembler: záměna obsahů registrů pomocí zásobníku**
+```assembly
+	lxi sp, 63554
+	push d
+	push b
+	pop d
+	pop b
+konec60	hlt
+```
