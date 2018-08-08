@@ -345,3 +345,22 @@ zhigh64	db
 	sta	zhigh64
 konec86	HLT
 ```
+
+**75) Asembler: Asembler: operace prováděné v cyklu**
+```assembly
+kolik4e	db
+zacatek	lda kolik4e
+	cpi 0
+	jz konecee
+	dcr a
+	sta kolik4e
+pridani	mvi m , 30
+	mov a , l
+	adi 1
+	mov l , a
+	mov a , h
+	aci 0
+	mov h , a
+	jmp zacatek	
+konecee	hlt
+```
