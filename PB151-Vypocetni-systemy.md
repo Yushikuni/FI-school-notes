@@ -365,7 +365,7 @@ pridani	mvi m , 30
 konecee	hlt
 ```
 
-**76) Assembler: záměna obsahů registrů pomocí zásobníku**
+**76) Asembler: záměna obsahů registrů pomocí zásobníku**
 ```assembly
 	lxi sp, 63554
 	push d
@@ -373,4 +373,26 @@ konecee	hlt
 	pop d
 	pop b
 konec60	hlt
+```
+
+**77) Asembler: použití volání podprogramu**
+```assembly
+wc11	db	
+x103	db
+ybb3	db
+zf1c	db
+	lda	wc11
+	mov	b, a
+	lda	x103
+	call	odectia
+	lda	ybb3
+	call	odectia
+	lda	zf1c
+	call	odectia
+konec6b	HLT
+odectia:	CMA
+	inr	a
+	add	b
+	mov	b, a
+	RET
 ```
