@@ -365,7 +365,7 @@ pridani	mvi m , 30
 konecee	hlt
 ```
 
-**76) Asembler: záměna obsahů registrů pomocí zásobníku**
+**76) Assembler: záměna obsahů registrů pomocí zásobníku**
 ```assembly
 	lxi sp, 63554
 	push d
