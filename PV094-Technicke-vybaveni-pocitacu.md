@@ -12,7 +12,7 @@
 - maximum 16 bodů, alespoň 8 bodů na E
 - 70 minut čistého času
 
-### Základní pojmy
+### __Základní pojmy__
 **Počítač**
 - stroj na zpracování informací
 - pracuje pomocí předem vytvořeného programu
@@ -68,7 +68,7 @@
 - programov vybaavení v paměti ROM (EPROM, EEPROM, Flash)
 - zajišťuje nejzákladnější funkce (např. zavedení OS)
 
-### Jedotky informace
+### __Jednotky informace__
 
 **bit**
 - 1 bit (binary digit - dvojková číslice):
@@ -111,7 +111,7 @@
 
 - Registr - velmi rychlé paměťové místo (o malé kapacitě v jednotkách bytů) umístěné zpravidla uvnitř procesoru
 
-### Von Neumannovo schéma
+### __Von Neumannovo schéma__
 **Operační paměť**
 - slouží k ukládání dat, se kterými se pracuje
 - uchovává také jednotlivé instrukce programu
@@ -138,7 +138,7 @@
 - procesor je zastoupen řadičem a ALU
 - v dnešní době už se toto schéma moc nepoužívá, nicméně hlavní myšlenka zůstává zachována (mám program, ten dělá nějakou činnost, dám ho ke zpracování počítači, ten na jeho základě vykonává svou činnost)
 
-### Historie počítačů
+### __Historie počítačů__
 
 **0. generace**
 - rok 1940
