@@ -53,18 +53,59 @@
 - pokud je y = epsilon, tak slovo *u* nazýváme příponou (suffixem)
 
 **mocniny**
-- unární operace definována pro všechny i
-- N0 = přirozená čísla s 0
+- unární operace definována pro všechny *i*
+- N<sub>0</sub> = přirozená čísla s 0
 - N = přirozená čísla od 1...N
 - např.
-  *u0 = epsilon
-  ui+1 = u.ui*
+  *u<sup>0</sup> = {epsilon}
+  u<sup>i+1</sup> = u.u<sup>i</sup>*
 - konkrétní příklad:
   *u = ba
-  u0 = epsilon
+  u<sup>0</sup> = epsilon
   u<sup>1</sup> = u . u<sup>0</sup> = ba . epsilon = ba
-  u2 = u . u1 = ba . ba = baba
-  .
-  .
-  .
-  *
+  u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
+
+#### Operace nad jazyky
+- výsledkem je vždy jazyk (sjednocení) nad oběma zastoupenými abecedami
+- standardní operace: sjednoccení, průnik, rozdíl
+- zřetězení jazyků L a K je jazyk L.K = {u.v | u le L, v le K}, zachovává se pořadí
+- např.
+  *1 =  {0, 1}, 2 = {a, b}
+  L = {00, 01}, K = {aa, bb}
+  L.K = {00aa, 00bb, 01aa, 01bb}*
+- (prázdná množina).L = prázdná množina, ale pozor {(prázdné slovo)}.L = L
+
+**Iterace** jazyka L je jazyk L* = sjednocení Li (i = 0, nekonečno)
+*L = {aa, b}*
+L* = L0 sjednoceno L1 sjednoceno L2 ...
+L* = {epsilon, aa, b, aaaa, aab, baa, bb, aaaaaa, aaaab, ... }*
+
+**Pozitivní iterace**
+L+ = L* 
+
+**Doplněk** jazyka L je jazyk co-L = (sigma)* bez L, je pro to třeba znát abecedu
+- např.
+  *L =  {a, aa}
+  sigma = {a} co-L = {epsilon, aaa, aaaa, ...}
+  sigma = {a, b} co-L = {epsilon, b, ab, ba, bb} sjednoceno {w in {a, b}* *| |w| more or eq 3*}
+
+**Zrcadlový obraz**
+- např.
+  *{abacca}<sup>R</sup> = accaba*
+
+#### Uzavřená třída jazyků
+- např.
+  * sigma = {a}
+  L>  L<sub>1</sub> = {epsilon, a, aa, aaa, aaaa...}
+      L<sub>2</sub> = {a, aa, aaa, aaaa...}
+      L<sub>3</sub> = {aa, aaa, aaaa...}
+      L<sub>i</sub> = {a<sup>j</sup> | j more or eq i}
+  
+  L je uzavřená na: (union), (intersect), L<sup>n</sup> | (n > 0), 
+  L není uzavřená na: (diff)
+  
+  L<sub>i</sub> (union) L<sub>j</sub> = L<sub>min(i,j)</sub>
+  L<sub>i</sub> (intersect) L<sub>j</sub> = L<sub>max(i,j)</sub>
+  L<sub>1</sub> (union) L<sub>2</sub> = {a}
+  
+  
