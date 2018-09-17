@@ -176,7 +176,12 @@
 - rok 1964
 - do 5 skříní
 - desetitisíce operací za sekundu
-- součástka: IO
+- součástka: IO (integrovaný obvod, SSI v kombinaci MSI)
+
+- začíná se objevovat paralelní zpracování programů (aby počítač mohl zpracovávat data a periférie třeba tisknout výsledky)
+- zdokonalují se operační systémy
+- vznikají další vyšší programovací jazyky (SIMULA, PL/1, C, Pascal, Prolog)
+- př. IBM 360, UNIVAC, SIEMENS, BURROUGHS, CDC
 
 **3 a 1/2 generace**
 - rok 1972
@@ -189,3 +194,87 @@
 - 1 skříň
 - desítky milipnů operací za sekundu
 - součástka IO (VLSI, 100 000+ logických členů)
+
+### __Technologie výroby integrovaných obvodů__
+
+**Tranzistor**
+- polovodičová součástka, která má tři elektrody (báze, kolektor, emitor)
+- NPN - kolektor je +
+- PNP - kolektor je - (je uzemněn)
+
+**TTL**
+- _**T**ransistor **T**ransistor **L**ogic_
+- rychlá, ale drahá technologie
+- základním stavebním prvkem je bipolární tranzistor (NPN, PNP)
+- nevýhoda: velká soustřeba el. energie, velké zahřívání takových obvodů
+*insert image of NPN, PNP*
+- základní zapojení: invertor (mění 1 na 0 a obráceně)
+*insert image of invertor circuit*
+
+- tranzistor lze využít jako spínač (invertor), není však nejlepší
+> Na bázi přivedeme vysoký proud, tranzistor sepne, mezi vývodem a negovanou hodnotou je nulové napětí, představuje logickou nulu
+> Na bázi přivedeme nízký proud, tranzistor nesepne, toto představuje velký odpor. Podle Ohmova zákona velký odpor znamená velké napětí, což představuje logickou jedničku
+
+**PMOS**
+- _**P**ositive **M**etal **O**xide **S**emiconductor_
+- technologie používající unipolární tranzistor MOS
+- je řízená elektrickým polem, nikoli elektrickým pole
+- má menší příkon, tudíž redukuje nároky na spotřebu elektrické energie
+- jedná se však o pomalou a dnes již samosatně nepoužívanou technologie (v kombinaci s NMOS se stále používá)
+
+**NMOS**
+- _**N**egative **M**etal **O**xide **S**emiconductor_
+- technologie využícící unipolární tranzistor MOS s negativním vodivostním kanálem
+- používala se zhruba do začátku 80. let
+- levnější a efektivnější než TTL, rychlejší než PMOS
+
+**CMOS**
+- _**C**omplementary **MOS**_
+- technologie spojující v jednom návrhu prvky tranzistorů PMOS i NMOS
+- obvody CMOS mají malou spotřebu
+- používají se pro výrobu velké části dnešních moderních integrovaných obvodů
+- jiné pojmenování elektrod: báze = gate, kolektor = drain, source = emitor
+- PMOS - šipka vede z báze ven
+- NMOS - šipka vede směrem dovnitř báze
+*insert image of invertor curcuit in CMOS technology*
+
+> Invertor v CMOS využívá dvou tranzistorů NMOS a PMOS, které mají opačnou vodivost. Při přivedení proudu vždy jeden z nich sepne, druhý nesepne a bude zastupovat rezistor. (vytvářet odpor) Malé napětí (sepnutí) na NMOS představuje 0, malé napětí na PMOS představuje 1.
+
+**BiCMOS**
+- _**Bi**polar **C**omplementary **M**etal **O**xide **S**emiconductor_
+- technologie spojujícíc na jednom čipu prvky bipolární technologie i technologie CMS
+- používána zejména firmou Intel k výrobě mikroprocesorů (řada Pentium)
+
+### __Základní jednotka__
+** Obsahuje zpravidla:**
+- základní desku (mainboard, motherboard) a zařízení na ní integrovaná (síťová, zvuková, grafická karta)
+  - občas nevýhodné (grafická karta), protože je třeba na náročnější operace pořídit dodatečné lepší periférie
+  - nicméně v případě síťové karty to nemusí být špatné
+  - v současné době se snaží výrobci dávat co nejvíce na motherboard
+- procesor
+  - je třeba, aby byl kompatabilní se základní deskou
+- numerický koprocesor
+  - původně byl zakomponován ve zvlášním slotu na základní desce
+  - aktuálně jej obsahují všechny procesory
+- paměť (jak vnitřní - operační, tak vnější - diskové jednotky, páskové jednotky)
+- řídící jednotky vnější paměť
+  - původně
+  - dříve se jednalo o řadiče, které zodpovídali za řízení pevného disku
+  - v současné době jednodušší pro výrobce pevných disků (výrobce vyrobí pevný disk a řídící jednotku a jen zajistí, aby byla kompatabilní s používaným rozhraním)
+- rozšiřující karty: grafická, zvuková, faxmodemová, síťová karta
+- napájecí zdroj
+
+### __Periférní zařízení__
+- klávesnice
+- zobrazovací jednotka (monitor - na principu katodové trubice, LCD displej)
+- myš, trackball (původně), touchpad
+- tiskárna
+- souřadnicový zapisovač (plotter)
+- modem
+- scanner
+- externí diskové jednotky:
+  - CD-ROM, CD-R, CD-RW (liší se možností zápisu)
+  - DVD, BD (Blue-Ray disc)
+  - magnetooptické disky
+  - ZIP, JAZZ (ZIP mají větší kapacitu, JAZZ jsou menší pevné disky)
+- zařízení připojitelná ke zvukové kartě (reproduktory, mikrofon, syntetizátor)
