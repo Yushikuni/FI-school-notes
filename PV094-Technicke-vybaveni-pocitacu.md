@@ -65,7 +65,127 @@
 
 **BIOS (ROM BIOS)**
 - z celého anglického **B**asic **I**nput **O**utput **S**ystem
-- programov vybaavení v paměti ROM (EPROM? EEPROM, Flash)
+- programov vybaavení v paměti ROM (EPROM, EEPROM, Flash)
 - zajišťuje nejzákladnější funkce (např. zavedení OS)
 
+#### Jedotky informace
 
+**bit**
+- 1 bit (binary digit - dvojková číslice):
+- základní jednotka informace
+- označuje se malým písmenem *b*
+- může nabývat pouze hodnot *0* a *1*
+- poskytuje množství informace potřebné k rozhodnutí mezi dvěma možnostmi
+
+**Byte**
+- jednotka odpovídající 8 bitům
+
+**Word**
+- jednotka informace
+- platí 1 W = 2 B = 16 b
+- občas se užívá i doubleword (1W = 32 b)
+
+#### Paměť
+
+**Pamět**
+- zařízení sloužící k uchování informací (binárně kódovaných dat)
+- kapacita paměti - množství informací, které lze do paměti uložit, udává se v bytech
+- zpravidla se užívají předpony (kilo-, mega-, giga-, tera-)
+- 1kB = 1024 B (2<sup>10</sup> B)
+- bývá rozdělena na buňky jednoznačně identifikovatelné svým číslem (adresa paměti)
+- nejmenší adresovatelná jednotka - velikost buňky, která má svou vlastní adresu
+  - velikost je variabilní, zpravidla bývá 1 byte (v dnešní době)
+  - pružné disky však měli nejmenší adresovatelnou jednotku 1 sektor (čili 512 bytů), čtení a zápis probíhal pouze v sektorech
+
+**Rozdělení paměťi**
+- Vnitřní (operační) - slouží k uchování momentálně zpracovaných dat a programů, realizuje se polovodičovými součástkami
+- Vnější (periferní) - slouží k dlouhodobějšímu uchování dat, realizuje se na principu magnetického (či optického) záznamu dat)
+- vnější paměťi jsou pomalejší, ale za to mají větší kapacitu
+
+- RAM (Random Access Memory) - paměť pro čtení i zápis dat
+- ROM (Read Only Memory) - paměť pouze pro čtení dat
+- existují i další paměti typu PROM, EPROM, EEPROM (označovali se také jako WORM - Write Once Read Many)
+
+- Paměť s přímým přístupem - dovoluje okamžitě přistoupit k místo s libovolnou adresou
+- Paměť se sekvenčním přístupem - pro přístup k libovolnému místu s adresou N je třeba přečíst všechna předchozí místa (0 až n-1), příkladem je třeba páska
+
+- Registr - velmi rychlé paměťové místo (o malé kapacitě v jednotkách bytů) umístěné zpravidla uvnitř procesoru
+
+#### Von Neumannovo schéma
+**Operační paměť**
+- slouží k ukládání dat, se kterými se pracuje
+- uchovává také jednotlivé instrukce programu
+
+**ALU**
+- aritmeticko-logická jednotka
+- jednotka sloužící k provádění aritmetických a logických operací
+- obsahuje sčítačky, násobičky, komparátory
+- dá se přidat i rozšíření jako jsou třeba matematický koprocesor
+
+**Řadič**
+- řídící jednotka, stará se o činnost veškerých ostatních zařízení
+- dostává stavová hlášení z jednotlivých zařízení
+
+**Vstupní a výstupní zařízení**
+- slouží k příjmu a výstupu dat
+
+**Princip funkčnosti**
+1) prostřednictvím vstupního zařízení se načtou data a program
+2) program i data se přes ALU se načte do operační paměťi
+3) ALU začne provádět program, mezivýsledky ukládá do operační paměťi
+4) výsledek posílá ALU na výstupní zařízení
+5) po celou dobu provádění programu kontroluje řadič správné provádění instrukcí
+- procesor je zastoupen řadičem a ALU
+- v dnešní době už se toto schéma moc nepoužívá, nicméně hlavní myšlenka zůstává zachována (mám program, ten dělá nějakou činnost, dám ho ke zpracování počítači, ten na jeho základě vykonává svou činnost)
+
+#### Historie počítačů
+
+**0. generace**
+- rok 1940
+- velký počet skříní
+- operace za sekundu v rámci jednotek
+- součástka: relé (sepne/nesepne, 1 nebo 0)
+- bug = hmyz vletí do relé a omylem sepne obvod, součástka pak nefunguje :D
+
+**1. generace**
+- rok 1950
+- desítky skříní
+- 10 - 1000 operací za sekundu
+- součástka: elektronky
+
+- vybudovány podle von Neumannova schématu
+- charakteristický diskrétní režim
+- neexistují vyšší programovací jazyky
+- neexistují operační systémy
+- používány především pro vědeckotechnické výpočty
+- př. ENIAC I, MARK-I, UNIVAC I, BECM
+
+**2. generace**
+- rok 1958
+- do 10 skříní
+- tisíce operací za sekundu
+- součástka: tranzistor
+
+- charakteristický dávkový režim práce (nasadíme dávku práce, program zpracuje postupně sám)
+- vznikají první operační systémy
+- vznikají vyšší programovací jazyky (Fortran, Cobol, Algol)
+- používají se pro vědeckotechnické výpočty a hromadné zpracování dat
+- př. UNIVAC, IBM1401, URAL 1
+
+**3. generace**
+- rok 1964
+- do 5 skříní
+- desetitisíce operací za sekundu
+- součástka: IO
+
+**3 a 1/2 generace**
+- rok 1972
+- 1 skříň
+- statisíce operací za sekundu
+- součástka: IO (LSI, 1 000 - 10 000 logických členů)
+
+**4. generace**
+- rok 1981
+- 1 skříň
+- desítky milipnů operací za sekundu
+- součástka IO (VLSI, 100 000+ logických členů)
