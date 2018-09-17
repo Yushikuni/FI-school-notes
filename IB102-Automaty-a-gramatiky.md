@@ -5,19 +5,19 @@
 #### Formální jazyk
 **abeceda**
 - libovolná konečná množina
-- značená symbolem Σ
-- např. {a, b, c, d}, {@, #, %, ...}
+- značená symbolem *Σ*
+- např. *{a, b, c, d}, {@, #, %, ...}*
 - prvek abecedy nazýváme jako *symbol*
 
 **slovo (řetězec)**
 - nad abecedou Σ je libovolná konečná posloupnost znaků této abecedy
-- např. *Σ = {a, b, c}
-  - slova zde budou například:
-  - u = abba
-  - v = a
-  - w = cacacaca
-  - y = ε*
-- prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako ε
+- např. *Σ = {a, b, c}*
+  -* slova zde budou například:*
+  -* u = abba*
+  -* v = a*
+  -* w = cacacaca*
+  -* y = ε*
+- prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako *ε*
 - počet znaků v posloupnosti v značíme *|v|*
 
 **jazyk**
@@ -59,20 +59,20 @@
 - např.
   *u<sup>0</sup> = {ε}*
   *u<sup>i+1</sup> = u.u<sup>i</sup>*
-- konkrétní příklad:
-  *u = ba*
-  *- u<sup>0</sup> = ε*
-  *- u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba*
-  *- u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
+- konkrétní příklad:<br/>
+  >*u = ba*<br/>
+  >*u<sup>0</sup> = ε*<br/>
+  >*u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba*<br/>
+  >*u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
 
 #### Operace nad jazyky
 - výsledkem je vždy jazyk (sjednocení) nad oběma zastoupenými abecedami
 - standardní operace: sjednoccení, průnik, rozdíl
 - zřetězení jazyků L a K je jazyk L.K = {u.v | u ∈ L, v ∈ K}, zachovává se pořadí
 - např.<br/>
-  *1 =  {0, 1}, 2 = {a, b}*<br/>
-  *- L = {00, 01}, K = {aa, bb}*<br/>
-  *- L.K = {00aa, 00bb, 01aa, 01bb}*
+  >*1 =  {0, 1}, 2 = {a, b}*<br/>
+  >*L = {00, 01}, K = {aa, bb}*<br/>
+  >*L.K = {00aa, 00bb, 01aa, 01bb}*
 - (prázdná množina).L = prázdná množina, ale pozor {(prázdné slovo)}.L = L
 
 **Iterace** jazyka L je jazyk L* = sjednocení Li (i = 0, nekonečno)
