@@ -57,23 +57,22 @@
 - N<sub>0</sub> = přirozená čísla s 0
 - N = přirozená čísla od 1...N
 - např.
-  *u<sup>0</sup> = {ε}
-  u<sup>i+1</sup> = u.u<sup>i</sup>*
+  *u<sup>0</sup> = {ε}*
+  *u<sup>i+1</sup> = u.u<sup>i</sup>*
 - konkrétní příklad:
-  ```markdown
-  u = ba
-  - u<sup>0</sup> = ε*
-  - u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba
-  - u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba```
+  *u = ba*
+  *- u<sup>0</sup> = ε*
+  *- u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba*
+  *- u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
 
 #### Operace nad jazyky
 - výsledkem je vždy jazyk (sjednocení) nad oběma zastoupenými abecedami
 - standardní operace: sjednoccení, průnik, rozdíl
 - zřetězení jazyků L a K je jazyk L.K = {u.v | u ∈ L, v ∈ K}, zachovává se pořadí
-- např.
-  *1 =  {0, 1}, 2 = {a, b}
-  - L = {00, 01}, K = {aa, bb}
-  - L.K = {00aa, 00bb, 01aa, 01bb}*
+- např.<br/>
+  *1 =  {0, 1}, 2 = {a, b}*<br/>
+  *- L = {00, 01}, K = {aa, bb}*<br/>
+  *- L.K = {00aa, 00bb, 01aa, 01bb}*
 - (prázdná množina).L = prázdná množina, ale pozor {(prázdné slovo)}.L = L
 
 **Iterace** jazyka L je jazyk L* = sjednocení Li (i = 0, nekonečno)
