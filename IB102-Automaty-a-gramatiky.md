@@ -2,7 +2,7 @@
 ------
 ### Přednáška 1 - 17. 09. 2018
 
-#### Formální jazyk
+#### Formální ^jazyk
 **abeceda**
 - libovolná konečná množina
 - značená symbolem velké sigma
