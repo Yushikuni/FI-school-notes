@@ -1,3 +1,3 @@
-### Softwarové inženýrství I
+# Softwarové inženýrství I
 
-# Cvičení 1 - 17. 09. 2018
+### Cvičení 1 - 17. 09. 2018
