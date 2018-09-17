@@ -1,6 +1,6 @@
 # Technické vybavení počítačů
 
-### 1. přednáška - 17. 09. 2018
+## 1. přednáška - 17. 09. 2018
 
 **Konzultační hodiny**
 - Út: 11:00 - 12:30
@@ -12,7 +12,7 @@
 - maximum 16 bodů, alespoň 8 bodů na E
 - 70 minut čistého času
 
-#### Základní pojmy
+### Základní pojmy
 **Počítač**
 - stroj na zpracování informací
 - pracuje pomocí předem vytvořeného programu
@@ -68,7 +68,7 @@
 - programov vybaavení v paměti ROM (EPROM, EEPROM, Flash)
 - zajišťuje nejzákladnější funkce (např. zavedení OS)
 
-#### Jedotky informace
+### Jedotky informace
 
 **bit**
 - 1 bit (binary digit - dvojková číslice):
@@ -85,7 +85,7 @@
 - platí 1 W = 2 B = 16 b
 - občas se užívá i doubleword (1W = 32 b)
 
-#### Paměť
+### Paměť
 
 **Pamět**
 - zařízení sloužící k uchování informací (binárně kódovaných dat)
@@ -111,7 +111,7 @@
 
 - Registr - velmi rychlé paměťové místo (o malé kapacitě v jednotkách bytů) umístěné zpravidla uvnitř procesoru
 
-#### Von Neumannovo schéma
+### Von Neumannovo schéma
 **Operační paměť**
 - slouží k ukládání dat, se kterými se pracuje
 - uchovává také jednotlivé instrukce programu
@@ -138,7 +138,7 @@
 - procesor je zastoupen řadičem a ALU
 - v dnešní době už se toto schéma moc nepoužívá, nicméně hlavní myšlenka zůstává zachována (mám program, ten dělá nějakou činnost, dám ho ke zpracování počítači, ten na jeho základě vykonává svou činnost)
 
-#### Historie počítačů
+### Historie počítačů
 
 **0. generace**
 - rok 1940
