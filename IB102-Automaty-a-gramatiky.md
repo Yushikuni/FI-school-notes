@@ -11,12 +11,12 @@
 
 **slovo (řetězec)**
 - nad abecedou Σ je libovolná konečná posloupnost znaků této abecedy
-- např. *Σ = {a, b, c}*
-  -* slova zde budou například:*
-  -* u = abba*
-  -* v = a*
-  -* w = cacacaca*
-  -* y = ε*
+  >Σ = {a, b, c}
+  >slova zde budou například:
+  >- u = abba
+  >-v = a
+  >- w = cacacaca
+  >- y = ε
 - prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako *ε*
 - počet znaků v posloupnosti v značíme *|v|*
 
