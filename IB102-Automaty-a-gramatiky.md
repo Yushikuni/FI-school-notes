@@ -2,7 +2,7 @@
 ------
 ### Přednáška 1 - 17. 09. 2018
 
-#### Formální ^jazyk
+#### Formální jazyk
 **abeceda**
 - libovolná konečná množina
 - značená symbolem Σ
@@ -16,15 +16,15 @@
   - u = abba
   - v = a
   - w = cacacaca
-  - y = malé epsilon
-- prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako malé epsilon
+  - y = ε
+- prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako ε
 - počet znaků v posloupnosti v značíme |v|
 
 **jazyk**
 - nad abecedou Σ je libovolná množina slov nad Σ
 - např. Σ = {a, b, c}
   - L = {aa, abac, cc}
-  - L' = {epsilon}
+  - L' = {ε}
   - L''' = prázdná množina
 - množina všech slov značíme jako Σ na hvězdičku
 - množinu všech neprázdných slov značíme jako Σ na plus
@@ -33,8 +33,8 @@
 **zřetězení** je binární operace, označována ., je definována předpisem: *u.v = uv*
 - např.
   *abac . bb = abacbb
-  aba. (epsilon) = aba
-  (epsilon) . aba = aba*
+  aba . ε = aba
+  ε . aba = aba*
 - zřetězení je asociativní, tj. *u.(u.w) = (u.v).v*
   - např.
   *(ab.bac).ac = abbac.ac = abbacac
@@ -46,23 +46,23 @@
 - libovolná podposloupnost daného slova
 - např.
   *v = baca
-  podslova: baca, bac, aca, ba, ac, ca, b, a, c, (epsilon)*
+  podslova: baca, bac, aca, ba, ac, ca, b, a, c, ε*
 
 **předpona**
-- pokud je x = epsilon, tak slovo *u* je předponou (prefixem)
-- pokud je y = epsilon, tak slovo *u* nazýváme příponou (suffixem)
+- pokud je x = ε, tak slovo *u* je předponou (prefixem)
+- pokud je y = ε, tak slovo *u* nazýváme příponou (suffixem)
 
 **mocniny**
 - unární operace definována pro všechny *i*
 - N<sub>0</sub> = přirozená čísla s 0
 - N = přirozená čísla od 1...N
 - např.
-  *u<sup>0</sup> = {epsilon}
+  *u<sup>0</sup> = {ε}
   u<sup>i+1</sup> = u.u<sup>i</sup>*
 - konkrétní příklad:
   *u = ba
-  u<sup>0</sup> = epsilon
-  u<sup>1</sup> = u . u<sup>0</sup> = ba . epsilon = ba
+  u<sup>0</sup> = ε
+  u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba
   u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
 
 #### Operace nad jazyky
@@ -78,7 +78,7 @@
 **Iterace** jazyka L je jazyk L* = sjednocení Li (i = 0, nekonečno)
 *L = {aa, b}*
 L* = L0 sjednoceno L1 sjednoceno L2 ...
-L* = {epsilon, aa, b, aaaa, aab, baa, bb, aaaaaa, aaaab, ... }*
+L* = {ε, aa, b, aaaa, aab, baa, bb, aaaaaa, aaaab, ... }*
 
 **Pozitivní iterace**
 L+ = L* 
@@ -86,8 +86,8 @@ L+ = L*
 **Doplněk** jazyka L je jazyk co-L = Σ* bez L, je pro to třeba znát abecedu
 - např.
   *L =  {a, aa}
-  Σ = {a} co-L = {epsilon, aaa, aaaa, ...}
-  Σ = {a, b} co-L = {epsilon, b, ab, ba, bb} sjednoceno {w in {a, b}* *| |w| more or eq 3*}
+  Σ = {a} co-L = {ε, aaa, aaaa, ...}
+  Σ = {a, b} co-L = {ε, b, ab, ba, bb} sjednoceno {w in {a, b}* *| |w| more or eq 3*}
 
 **Zrcadlový obraz**
 - např.
@@ -96,7 +96,7 @@ L+ = L*
 #### Uzavřená třída jazyků
 - např.
   * Σ = {a}
-      L<sub>1</sub> = {epsilon, a, aa, aaa, aaaa...}
+      L<sub>1</sub> = {ε, a, aa, aaa, aaaa...}
       L<sub>2</sub> = {a, aa, aaa, aaaa...}
       L<sub>3</sub> = {aa, aaa, aaaa...}
       L<sub>i</sub> = {a<sup>j</sup> | j more or eq i}
