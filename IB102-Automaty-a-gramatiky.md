@@ -5,13 +5,13 @@
 #### Formální ^jazyk
 **abeceda**
 - libovolná konečná množina
-- značená symbolem velké sigma
+- značená symbolem Σ
 - např. {a, b, c, d}, {@, #, %, ...}
 - prvek abecedy nazýváme jako *symbol*
 
 **slovo (řetězec)**
-- nad abecedou sigma je libovolná konečná posloupnost znaků této abecedy
-- sigma = {a, b, c}
+- nad abecedou Σ je libovolná konečná posloupnost znaků této abecedy
+- Σ = {a, b, c}
 - slova zde budou například:
   - u = abba
   - v = a
@@ -21,13 +21,13 @@
 - počet znaků v posloupnosti v značíme |v|
 
 **jazyk**
-- nad abecedou sigma je libovolná množina slov nad sigma
-- např. sigma = {a, b, c}
+- nad abecedou Σ je libovolná množina slov nad Σ
+- např. Σ = {a, b, c}
   - L = {aa, abac, cc}
   - L' = {epsilon}
   - L''' = prázdná množina
-- množina všech slov značíme jako sigma na hvězdičku
-- množinu všech neprázdných slov značíme jako sigma na plus
+- množina všech slov značíme jako Σ na hvězdičku
+- množinu všech neprázdných slov značíme jako Σ na plus
 
 #### Operace a relace nad slovy
 **zřetězení** je binární operace, označována ., je definována předpisem: *u.v = uv*
@@ -83,11 +83,11 @@ L* = {epsilon, aa, b, aaaa, aab, baa, bb, aaaaaa, aaaab, ... }*
 **Pozitivní iterace**
 L+ = L* 
 
-**Doplněk** jazyka L je jazyk co-L = (sigma)* bez L, je pro to třeba znát abecedu
+**Doplněk** jazyka L je jazyk co-L = Σ* bez L, je pro to třeba znát abecedu
 - např.
   *L =  {a, aa}
-  sigma = {a} co-L = {epsilon, aaa, aaaa, ...}
-  sigma = {a, b} co-L = {epsilon, b, ab, ba, bb} sjednoceno {w in {a, b}* *| |w| more or eq 3*}
+  Σ = {a} co-L = {epsilon, aaa, aaaa, ...}
+  Σ = {a, b} co-L = {epsilon, b, ab, ba, bb} sjednoceno {w in {a, b}* *| |w| more or eq 3*}
 
 **Zrcadlový obraz**
 - např.
@@ -95,7 +95,7 @@ L+ = L*
 
 #### Uzavřená třída jazyků
 - např.
-  * sigma = {a}
+  * Σ = {a}
       L<sub>1</sub> = {epsilon, a, aa, aaa, aaaa...}
       L<sub>2</sub> = {a, aa, aaa, aaaa...}
       L<sub>3</sub> = {aa, aaa, aaaa...}
@@ -111,21 +111,21 @@ L+ = L*
   
 #### Aplikace
 N = {1, 2, 3, 4...}
-sigma = {0, 1, 2, 3, ... , 9}
+Σ = {0, 1, 2, 3, ... , 9}
 
 N = {1, 2, ... , 9} . {0, 1, 2, ... 9}*
 N<sup>0</sup> = N . {0}
 nebo
-N = sigma<sup>+</sup> - {0} . sigma<sup>+</sup>
+N = Σ<sup>+</sup> - {0} . Σ<sup>+</sup>
 
 #### Gramatika
 - je popis jazyka pomocí pravidel, podle kterých se vytvářejí všechna sova daného jazyka
 - např.
   *<veta> -> <podmetna cast><prisudkova cast>*
 - k zadání syntaxe vyšších programovacích jazyků používáme *Backus-Naurova normální formu (BNF)*
-- definice: Gramatika je čtveřice (N, sigma, P, S), kde
+- definice: Gramatika je čtveřice (N, Σ, P, S), kde
   - N je neprázdná konečná množina neterminálů
-  - sigma je konečná množina terminálů, taková, že N (intersect) sigma = (null) , množinu všech symbolů definujeme jako N (union) sigma
+  - Σ je konečná množina terminálů, taková, že N (intersect) Σ = (null) , množinu všech symbolů definujeme jako N (union) Σ
   - P je komečná množina pravidel, pravidlo (alfa, beta) zapisujeme jako alfa -> beta (alfa přepiš na beta)
   - S je počáteční terminál
 - např.
@@ -146,5 +146,5 @@ N = sigma<sup>+</sup> - {0} . sigma<sup>+</sup>
 - každá větná forma, která obsahuje pouze terminály
 
 #### Konvence zápisu
-Sigma - terminály: a, b, c, .... , 0, 1, ...
+Σ - terminály: a, b, c, .... , 0, 1, ...
 N - neterminály, S, A, B, C, ....
