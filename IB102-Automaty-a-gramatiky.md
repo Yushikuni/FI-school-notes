@@ -62,7 +62,7 @@
   >u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba
 
 #### Operace nad jazyky
-- výsledkem je vždy jazyk (sjednocení) nad oběma zastoupenými abecedami
+- výsledkem je vždy jazyk ∪ nad oběma zastoupenými abecedami
 - standardní operace: sjednoccení, průnik, rozdíl
 - zřetězení jazyků *L* a *K* je jazyk *L . K = {u.v | u ∈ L, v ∈ K}*, zachovává se pořadí
   >1 =  {0, 1}, 2 = {a, b}<br/>
@@ -70,9 +70,9 @@
   >L.K = {00aa, 00bb, 01aa, 01bb}
 - (prázdná množina) . L = prázdná množina, ale pozor {(prázdné slovo)} . L = L
 
-**Iterace** jazyka L je jazyk L* = sjednocení Li (i = 0, nekonečno)
+**Iterace** jazyka L je jazyk L* = ∪ Li (i = 0, nekonečno)
 >L = {aa, b}*<br/>
->L* = L0 sjednoceno L1 sjednoceno L2 ...<br/>
+>L* = L0 ∪ L1 ∪ L2 ...<br/>
 >L* = {ε, aa, b, aaaa, aab, baa, bb, aaaaaa, aaaab, ... }<br/>
 
 **Pozitivní iterace**
@@ -81,7 +81,7 @@ L+ = L*
 **Doplněk** jazyka L je jazyk co-L = Σ* bez L, je pro to třeba znát abecedu
   >L = {a, aa}<br/>
   >Σ = {a} co-L = {ε, aaa, aaaa, ...}<br/>
-  >Σ = {a, b} co-L = {ε, b, ab, ba, bb} sjednoceno {w in {a, b}* *| |w| more or eq 3*}
+  >Σ = {a, b} co-L = {ε, b, ab, ba, bb} ∪ {w ∈ {a, b}* | |w| ≥ 3}
 
 **Zrcadlový obraz**
   >{abacca}<sup>R</sup> = accaba
@@ -91,14 +91,14 @@ L+ = L*
   >>  L<sub>1</sub> = {ε, a, aa, aaa, aaaa...}<br/>
   >>  L<sub>2</sub> = {a, aa, aaa, aaaa...}<br/>
   >>  L<sub>3</sub> = {aa, aaa, aaaa...}<br/>
-  >>  L<sub>i</sub> = {a<sup>j</sup> | j more or eq i}
+  >>  L<sub>i</sub> = {a<sup>j</sup> | j ≥ i}
   
-  L je uzavřená na: (union), (intersect), L<sup>n</sup> | (n > 0), ., + <br/>
+  L je uzavřená na: ∪, ∩, L<sup>n</sup> | (n > 0), ., + <br/>
   L není uzavřená na: (diff), L<sup>0</sup>, *, L+, R
   
-  >L<sub>i</sub> (union) L<sub>j</sub> = L<sub>min(i,j)</sub><br/>
-  >L<sub>i</sub> (intersect) L<sub>j</sub> = L<sub>max(i,j)</sub><br/>
-  >L<sub>1</sub> (union) L<sub>2</sub> = {a}
+  >L<sub>i</sub> ∪ L<sub>j</sub> = L<sub>min(i,j)</sub><br/>
+  >L<sub>i</sub> ∩ L<sub>j</sub> = L<sub>max(i,j)</sub><br/>
+  >L<sub>1</sub> ∪ L<sub>2</sub> = {a}
   
 #### Aplikace
 >N = {1, 2, 3, 4...}<br/>
@@ -112,15 +112,15 @@ nebo
 #### Gramatika
 - je popis jazyka pomocí pravidel, podle kterých se vytvářejí všechna sova daného jazyka
 - např.
-  *<veta> -> <podmetna cast><prisudkova cast>*
+  *<veta> → <podmetna cast><prisudkova cast>*
 - k zadání syntaxe vyšších programovacích jazyků používáme *Backus-Naurova normální formu (BNF)*
 - definice: Gramatika je čtveřice (N, Σ, P, S), kde
   - N je neprázdná konečná množina neterminálů
-  - Σ je konečná množina terminálů, taková, že N (intersect) Σ = (null) , množinu všech symbolů definujeme jako N (union) Σ
-  - P je komečná množina pravidel, pravidlo (alfa, beta) zapisujeme jako alfa -> beta (alfa přepiš na beta)
+  - Σ je konečná množina terminálů, taková, že N ∩ Σ = (null) , množinu všech symbolů definujeme jako N ∪ Σ
+  - P je komečná množina pravidel, pravidlo (alfa, beta) zapisujeme jako alfa → beta (alfa přepiš na beta)
   - S je počáteční terminál
   >G = ({s}, {a, b}, P, S)
-  >P = {S -> a, S -> baS, aS -> bb}
+  >P = {S → a, S → baS, aS → bb}
   ... doplnit na prtsc ...*
   
 **přímé odvození**
