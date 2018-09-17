@@ -11,14 +11,14 @@
 
 **slovo (řetězec)**
 - nad abecedou Σ je libovolná konečná posloupnost znaků této abecedy
-- Σ = {a, b, c}
-- slova zde budou například:
+- např. *Σ = {a, b, c}
+  - slova zde budou například:
   - u = abba
   - v = a
   - w = cacacaca
-  - y = ε
+  - y = ε*
 - prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako ε
-- počet znaků v posloupnosti v značíme |v|
+- počet znaků v posloupnosti v značíme *|v|*
 
 **jazyk**
 - nad abecedou Σ je libovolná množina slov nad Σ
@@ -30,14 +30,14 @@
 - množinu všech neprázdných slov značíme jako Σ na plus
 
 #### Operace a relace nad slovy
-**zřetězení** je binární operace, označována ., je definována předpisem: *u.v = uv*
+**zřetězení** je binární operace, označována *.* , je definována předpisem: *u.v = uv*
 - např.
-  *abac . bb = abacbb
-  aba . ε = aba
+  *abac . bb = abacbb,
+  aba . ε = aba,
   ε . aba = aba*
 - zřetězení je asociativní, tj. *u.(u.w) = (u.v).v*
   - např.
-  *(ab.bac).ac = abbac.ac = abbacac
+  *(ab.bac).ac = abbac.ac = abbacac,
   ab.(bac.ac) = ab.bacac = abbacac*
 - není komutativní
 
@@ -46,7 +46,7 @@
 - libovolná podposloupnost daného slova
 - např.
   *v = baca
-  podslova: baca, bac, aca, ba, ac, ca, b, a, c, ε*
+  - podslova: baca, bac, aca, ba, ac, ca, b, a, c, ε*
 
 **předpona**
 - pokud je x = ε, tak slovo *u* je předponou (prefixem)
@@ -61,18 +61,18 @@
   u<sup>i+1</sup> = u.u<sup>i</sup>*
 - konkrétní příklad:
   *u = ba
-  u<sup>0</sup> = ε
-  u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba
-  u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
+  - u<sup>0</sup> = ε
+  - u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba
+  - u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
 
 #### Operace nad jazyky
 - výsledkem je vždy jazyk (sjednocení) nad oběma zastoupenými abecedami
 - standardní operace: sjednoccení, průnik, rozdíl
-- zřetězení jazyků L a K je jazyk L.K = {u.v | u le L, v le K}, zachovává se pořadí
+- zřetězení jazyků L a K je jazyk L.K = {u.v | u ∈ L, v ∈ K}, zachovává se pořadí
 - např.
   *1 =  {0, 1}, 2 = {a, b}
-  L = {00, 01}, K = {aa, bb}
-  L.K = {00aa, 00bb, 01aa, 01bb}*
+  - L = {00, 01}, K = {aa, bb}
+  - L.K = {00aa, 00bb, 01aa, 01bb}*
 - (prázdná množina).L = prázdná množina, ale pozor {(prázdné slovo)}.L = L
 
 **Iterace** jazyka L je jazyk L* = sjednocení Li (i = 0, nekonečno)
