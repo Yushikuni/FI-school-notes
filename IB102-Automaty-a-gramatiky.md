@@ -96,16 +96,55 @@ L+ = L*
 #### Uzavřená třída jazyků
 - např.
   * sigma = {a}
-  L>  L<sub>1</sub> = {epsilon, a, aa, aaa, aaaa...}
+      L<sub>1</sub> = {epsilon, a, aa, aaa, aaaa...}
       L<sub>2</sub> = {a, aa, aaa, aaaa...}
       L<sub>3</sub> = {aa, aaa, aaaa...}
       L<sub>i</sub> = {a<sup>j</sup> | j more or eq i}
   
-  L je uzavřená na: (union), (intersect), L<sup>n</sup> | (n > 0), 
-  L není uzavřená na: (diff)
+  L je uzavřená na: (union), (intersect), L<sup>n</sup> | (n > 0), ., + 
+  L není uzavřená na: (diff), L<sup>0</sup>, *, L+, R
   
   L<sub>i</sub> (union) L<sub>j</sub> = L<sub>min(i,j)</sub>
   L<sub>i</sub> (intersect) L<sub>j</sub> = L<sub>max(i,j)</sub>
   L<sub>1</sub> (union) L<sub>2</sub> = {a}
+  *
   
+#### Aplikace
+N = {1, 2, 3, 4...}
+sigma = {0, 1, 2, 3, ... , 9}
+
+N = {1, 2, ... , 9} . {0, 1, 2, ... 9}*
+N<sup>0</sup> = N . {0}
+nebo
+N = sigma<sup>+</sup> - {0} . sigma<sup>+</sup>
+
+#### Gramatika
+- je popis jazyka pomocí pravidel, podle kterých se vytvářejí všechna sova daného jazyka
+- např.
+  *<veta> -> <podmetna cast><prisudkova cast>*
+- k zadání syntaxe vyšších programovacích jazyků používáme *Backus-Naurova normální formu (BNF)*
+- definice: Gramatika je čtveřice (N, sigma, P, S), kde
+  - N je neprázdná konečná množina neterminálů
+  - sigma je konečná množina terminálů, taková, že N (intersect) sigma = (null) , množinu všech symbolů definujeme jako N (union) sigma
+  - P je komečná množina pravidel, pravidlo (alfa, beta) zapisujeme jako alfa -> beta (alfa přepiš na beta)
+  - S je počáteční terminál
+- např.
+  *G = ({s}, {a, b}, P, S)
+  P = {S -> a, S -> baS, aS -> bb}
+  ... doplnit na prtsc ...*
   
+**přímé odvození**
+- *doplnit def. přímého odvození*
+
+**odvození v _k_ krocích**
+- *doplnit*
+
+**Větná forma**
+- každý řetěz z množiny V*, který lze odvodit z počátečního neterminálu gramatika
+
+**Věta gramatiky**
+- každá větná forma, která obsahuje pouze terminály
+
+#### Konvence zápisu
+Sigma - terminály: a, b, c, .... , 0, 1, ...
+N - neterminály, S, A, B, C, ....
