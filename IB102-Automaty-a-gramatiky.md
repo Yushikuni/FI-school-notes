@@ -76,7 +76,7 @@
 >L* = {ε, aa, b, aaaa, aab, baa, bb, aaaaaa, aaaab, ... }<br/>
 
 **Pozitivní iterace**
-L+ = L* 
+L+ = L* \ ε (L* bez slova ε)
 
 **Doplněk** jazyka L je jazyk co-L = Σ* bez L, je pro to třeba znát abecedu
   >L = {a, aa}<br/>
