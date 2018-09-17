@@ -26,8 +26,8 @@
   - L = {aa, abac, cc}
   - L' = {ε}
   - L''' = prázdná množina
-- množina všech slov značíme jako Σ na hvězdičku
-- množinu všech neprázdných slov značíme jako Σ na plus
+- množina všech slov značíme jako Σ<sup>*</sup>
+- množinu všech neprázdných slov značíme jako Σ<sup>+</sup>
 
 #### Operace a relace nad slovy
 **zřetězení** je binární operace, označována *.* , je definována předpisem: *u.v = uv*
@@ -45,8 +45,8 @@
 - u je podslovem v, jestliže existují slova x, y taková, že *v = x.u.y*
 - libovolná podposloupnost daného slova
 - např.
-  *v = baca
-  - podslova: baca, bac, aca, ba, ac, ca, b, a, c, ε*
+  *v = baca*
+  *- podslova: baca, bac, aca, ba, ac, ca, b, a, c, ε*
 
 **předpona**
 - pokud je x = ε, tak slovo *u* je předponou (prefixem)
@@ -60,10 +60,11 @@
   *u<sup>0</sup> = {ε}
   u<sup>i+1</sup> = u.u<sup>i</sup>*
 - konkrétní příklad:
-  *u = ba
-  - u<sup>0</sup> = ε
+  ```markdown
+  u = ba
+  - u<sup>0</sup> = ε*
   - u<sup>1</sup> = u . u<sup>0</sup> = ba . ε = ba
-  - u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba*
+  - u<sup>2</sup> = u . u<sup>1</sup> = ba . ba = baba```
 
 #### Operace nad jazyky
 - výsledkem je vždy jazyk (sjednocení) nad oběma zastoupenými abecedami
