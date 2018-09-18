@@ -41,3 +41,11 @@ succ (9 * 10) -- result is 91
 div 92 10
 92 `div` 10 -- this is more clear
 ```
+
+**Odsazování**
+- Haskell je *tab sensitive*, namísto něj by se měly používat dvě mezery
+
+**If/else**
+- Větvení pomocí if/else je syntakticky podobné imperativním jazykům (nevyužívají se však složené závorky)
+- *if* je výraz, čili část kódu, která něco vrací
+- else větev je povinná!
