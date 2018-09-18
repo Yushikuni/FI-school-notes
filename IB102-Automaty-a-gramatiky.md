@@ -19,6 +19,7 @@
   >- y = ε
 - prázdnou posloupnost znaků odpovídá prázdné slovo, ozančované jako *ε*
 - počet znaků v posloupnosti v značíme *|v|*
+- výskyt znaku *a* ve slově *w* značíme jako #<sub>a</sub>(w)
 
 **jazyk**
 - nad abecedou Σ je libovolná množina slov nad Σ
