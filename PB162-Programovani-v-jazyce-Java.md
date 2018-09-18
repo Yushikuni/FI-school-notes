@@ -18,7 +18,15 @@
 - nejčastější IDE - NetBeans a IntelliJIDEA
 - JDK - samostatné vývojové prostředí
 - JRE - pouze běhové prostředí
-
-- každý řádek kódu musí být zakomponován do nějaké třídy
-- zdrojové kódy musí být obsaženy v *.java* souboru, zbytek vzniká při překladu
 - dá se použít *JavaDoc* pro vygenerování (HTML, PDF) dokumentace z komentářů
+
+### Hello world!
+- každý řádek kódu musí být zakomponován do nějaké třídy
+
+- zdrojové kódy musí být obsaženy v *.java* souboru, zbytek vzniká při překladu
+- první funkce spouští *main()* s danými argumenty
+```java
+public static void main(String[] args) {  
+  System.out.println("Hello, world");
+}```
+
