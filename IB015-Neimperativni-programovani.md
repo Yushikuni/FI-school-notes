@@ -31,3 +31,13 @@
 succ 9 + max 5 4 + 1
 (succ 9) + (max 5 4) + 1
 ```
+- prefixové funkce mají přednost před infixovými
+```haskell
+succ 9 * 10 -- result is 100
+succ (9 * 10) -- result is 91
+```
+- prefixové funkce, které berou dva argumenty, se dají přepsat na infixové pomocí obrácených apostrofů (kvůli čitelnosti)
+```haskell
+div 92 10
+92 `div` 10 -- this is more clear
+```
