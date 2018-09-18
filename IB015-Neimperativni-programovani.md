@@ -2,11 +2,8 @@
 --------
 - cíl předmětu: *Vyvinout se z Pikatchu na Rajchu*
 - nemohou se měnit hodnoty proměnných, ale mohou se měnit parametry funkce
-.
-. *doplnit informace ze slajdů*
-.
 
-### [Základní datové typy]
+### Základní datové typy
 **Čísla**
 - *Integer* - libovolně velká celá čísla
 - *Int* - celá čísla do velikosti slova procesoru
@@ -26,6 +23,11 @@
 - symbol _ vyhovuje libovolnému parametru
 - lze použít pro větvení výpočtu
 
-**Prefix**
-- (+) 3 5 = 8
-- + 3 5 = Error
+**Prefix a infix**
+- *prefixové funkce* - funkce, které stojí před svými parametry (např. *max*, *min*, *succ* či *pred*)
+- *infixové funkce* - funkce, které stojí mezi svými parametry (např. *+* či *)*
+- aplikace funkcí (zavolání funkce vložením mezery mezi název funkce a funkční hodnoty) má nejvyšší přednost (viz. spodní příklad - jsou naprosto stejné)
+```haskell
+succ 9 + max 5 4 + 1
+(succ 9) + (max 5 4) + 1
+```
