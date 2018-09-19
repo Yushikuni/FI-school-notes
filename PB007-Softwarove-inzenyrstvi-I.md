@@ -46,6 +46,47 @@
 5) Evoluce
 - modifikace produktu tak, aby reflektoval požadavky zákazníka a trhu (v opačném případě může ustrpnout a zaniknout mezi konkurencí)
 
+### UML v softwarovém vývoji
+- vznik v 90. letech, sjednocený
+- z anglického *Unified Modeling Language (UML)*
+- pomáhá vizualizovat z mnoha pohledů
+- externí perspektiva - vztahy v rámci systému, kontext
+- strukturní perspektiva - třídy, data, která jsou systémem zpracovávané
+- interakční perspektiva - jak spolu třídy komunikují
+- perspektiva chování - jakým způsobem se chovají jednotlivé třídy zvlášť
+
+**Oblíbené UML diagramy**
+- *Diagram případů užití (Use Case Diagram)* - interakce mezi systémem a okolím
+- *Diagram tříd*
+- *Sekvenční diagram*
+- *Diagram aktivit (Activity diagram)*
+
+### Use Case Diagram
+- použití:
+- specifikace funkčních požadavků (funkce, které má systém obsahovat)
+  - funkční požadavek: měl by umět udělat seznat všech klinik
+  - nefunkční požadavek: měl by být naprogramovaný v jazyce Java (toto je specifikace, nikoli požadavek na funkčnost)
+- obsahuje:
+
+**Aktér**
+- zastupuje entitu, která se systémem pracuje (nachází se vně systému)
+- iniciuje aktivitu v diagramu užití
+- aktérem může být například i čas
+- *generalizace* - dvě či více entit mají velkou část sdílených atributů, ale existuje i odlišné atributy, využívá se pak i dědičnosti
+
+**Use case**
+- zpravidla reprezentována slovesnou vazbou (například *zadej objednávku*)
+- jedná se o něco, co potřebuje aktér, aby systém udělal
+- primární aktor - například student si zapíše kurz
+- sekundární aktor - většinou člověk
+- vytváříme scénář pro každý use case
+  - zpravidla v angličtině, číslování kroků
+  - kroky, které se opakují např. v IF či FOR větvení se dávají třeba do 3.2.1 kroku a zanořují se
+- *branching* - dá se odskočit z main flow do alternative flow (například kvůli výjimkám)
+- dají se generalizovat
+- *include* - A include B (B je nutnou částí, bez něj A nefunguje a je součástí A)
+- *extend* - B extend A (A je funkční samo o sobě, B však rozšiřuje A)
+
 # Cvičení
 ## Cvičení 1 - 17. 09. 2018
 - celkově 90 bodů, potřeba 50 bodů na E
