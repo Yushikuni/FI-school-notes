@@ -384,4 +384,22 @@
   - chránený režim používá jinou metodu segmentace
   - logická adresa, skládá se ze segmentu a RPL se 2 bity na nejnižší pozici vpravo (**R**equested **P**rivilage **L**evel), RPL umožňuje 4 úrovně ochrany, nejvyšší ochranu má R0, dále TI (**T**able **I**ndex) určující zda se používá globální (GDT) či lokální (LDT) tabulka deskriptorů, TI = 0 reprezentuje GDT, TI = 1 reprezentuje LDT, zbývajících 13 bitů odpovídá selektroru (tzv. index)
   - *GDT/LDT*: má 64 bitů, jako ukazatel do ní slouží 13 bitový selektor, může mít 8192 adres, každá adresa má 24 bitů (vč. informací jako práva přístupu, co je obsahem apod.) a nazývá se jako báze segmentu, přičítáme k ní 16 bitový offset (bez posunu) a vzniká 24 bitová fyzická adresa, každý segment má tudíž velikost 64 kB, celková fyzická adresa má velikost 16 MB (24 bitů)
-
+- *Procesor 80386*
+  - na trh uveden v roce 1986
+  - později prodáván jako název 80386DX)
+  - dodáván v zapouzdření PGA se 132 vývody (čtvercové pouzdro)
+  - ekvivalent k cca 275 000 tranzistorů
+  - plně 32bitový procesorů (šířka slova: 32 bitů, šířka přenosu dat: 32 bitů)
+  - pracuje ve třech režimech:
+  - reálný režim (real mode)
+  1) režim podobný reálnému režimu předchozích procesorů
+  2) používá stejný adresovací mechanismus
+    - stejná maximální velikost operační paměti (1MB)
+    - stejná velikost jednoho segmentu (64kB)
+  - chráněný režim (protected mode)
+  1) podobný chráněnému režimu 80286
+  2) používá 32 datovou sběrnici, čili maximální velikost je 4 GB
+  - virtuální režim (virtual mode)
+  1) plně podřízen chráněnému režimu
+  2) procesor pracuje podobně jako procesory 8086/8088
+  3) má možnost virtualizovat 1MB operační paměti, který mohl adresovat 8086 a uložit jej kdekoliv do 4 GB operační paměťi
