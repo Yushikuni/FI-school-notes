@@ -4,7 +4,7 @@
 ## Přednáška 1 - 19. 09. 2018
 
 ### Softwarové inženýrství
-- pojem, který je 150 let starý, vznikl na koferenci NASA
+- pojem, který je 50 let starý, vznikl na koferenci NASA
 - zabývá se teoriemi, metodami a nástroji k profesionální vývoji softwarů
 - zabývá se tím, aby byl systém *cost-effective*, je třeba znát kontext a cílovou klientelu
 - protiklad mezi investicí do testování a verifikace (a uspoření nákladů za opravu) vs. nákladnější techniky vývoje 
