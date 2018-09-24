@@ -371,6 +371,17 @@
   - má pouze 8bitovou datovou sběrnici
   - zaveden z cenových důvodů
   - levnější, ale pomalejší
-  
-  
+- *Procesor 80168/80188*:
+  - podobné procesorům 8086/8088
+  - efektivnější mikrokód
+  - nezaznamenal většího rozšíření
+- *Procesor 80268*:
+  - navržen v roce 1981
+  - obsahuje asi 134 000 tranzistorů
+  - plně 16 bitový
+  - pracuje ve dvou režimech (reálný režim = real mode a chráněný režim = protected mode)
+  - chráněný režim chrání data jednoho programu před jinými programy
+  - chránený režim používá jinou metodu segmentace
+  - logická adresa, skládá se ze segmentu a RPL se 2 bity na nejnižší pozici vpravo (**R**equested **P**rivilage **L**evel), RPL umožňuje 4 úrovně ochrany, nejvyšší ochranu má R0, dále TI (**T**able **I**ndex) určující zda se používá globální (GDT) či lokální (LDT) tabulka deskriptorů, TI = 0 reprezentuje GDT, TI = 1 reprezentuje LDT, zbývajících 13 bitů odpovídá selektroru (tzv. index)
+  - *GDT/LDT*: má 64 bitů, jako ukazatel do ní slouží 13 bitový selektor, může mít 8192 adres, každá adresa má 24 bitů (vč. informací jako práva přístupu, co je obsahem apod.) a nazývá se jako báze segmentu, přičítáme k ní 16 bitový offset (bez posunu) a vzniká 24 bitová fyzická adresa, každý segment má tudíž velikost 64 kB, celková fyzická adresa má velikost 16 MB (24 bitů)
 
