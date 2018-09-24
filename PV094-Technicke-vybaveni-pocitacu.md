@@ -391,15 +391,21 @@
   - ekvivalent k cca 275 000 tranzistorů
   - plně 32bitový procesorů (šířka slova: 32 bitů, šířka přenosu dat: 32 bitů)
   - pracuje ve třech režimech:
-  1) reálný režim (real mode)
+  1) **reálný režim (real mode)**
   - režim podobný reálnému režimu předchozích procesorů
   - používá stejný adresovací mechanismus
   - stejná maximální velikost operační paměti (1MB)
   - stejná velikost jednoho segmentu (64kB)
-  2) chráněný režim (protected mode)
+  2) **chráněný režim (protected mode)**
   - podobný chráněnému režimu 80286
   - používá 32 datovou sběrnici, čili maximální velikost je 4 GB
-  3) virtuální režim (virtual mode)
+  3) **virtuální režim (virtual mode)**
   - plně podřízen chráněnému režimu
   - procesor pracuje podobně jako procesory 8086/8088
   - má možnost virtualizovat 1MB operační paměti, který mohl adresovat 8086 a uložit jej kdekoliv do 4 GB operační paměťi
+  <br />
+  - *proces segmentace:*
+  - *doplnit screen z prezentace*
+  - princip velmi podobný jako u 80286, položky tabulky deskriptorů produkují 32 bitovou bázovou adresu a sčítáme ji s 32 bitovým offsetem, výsledek je 32 bitová lineární adresa. Pokud má procesor vypnuté stránkování, tak se lineární adresa rovná fyzické, jinak se přechází do procesu stránkování
+  - *proces stránkování:*
+  - vezme se lineární adresa a provádíme další transformaci, rozdělíme lineární adresu na tři části (offset, tabulka, adresář = od nejmenšího k nejvyššímu bitu), adresář má 10 bitů, tabulka má 10 bitů, offset má 12 bitů, první vybereme 10 bitů a identifikuje podle něj bázi tabulky, těchto 20 bitů použijeme k identifikaci začátku tabulky stránek, k této tabulce přidáme 10 bitů tabulky, abychom našli bázi stránky, k těmto 20 bitům přičteme ještě 12 bitů offsetu a vzniká 32 bitová fyzická adresa
