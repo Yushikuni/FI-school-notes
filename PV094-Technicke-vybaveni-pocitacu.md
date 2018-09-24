@@ -391,15 +391,15 @@
   - ekvivalent k cca 275 000 tranzistorů
   - plně 32bitový procesorů (šířka slova: 32 bitů, šířka přenosu dat: 32 bitů)
   - pracuje ve třech režimech:
-  - reálný režim (real mode)
-  1) režim podobný reálnému režimu předchozích procesorů
-  2) používá stejný adresovací mechanismus
-    - stejná maximální velikost operační paměti (1MB)
-    - stejná velikost jednoho segmentu (64kB)
-  - chráněný režim (protected mode)
-  1) podobný chráněnému režimu 80286
-  2) používá 32 datovou sběrnici, čili maximální velikost je 4 GB
-  - virtuální režim (virtual mode)
-  1) plně podřízen chráněnému režimu
-  2) procesor pracuje podobně jako procesory 8086/8088
-  3) má možnost virtualizovat 1MB operační paměti, který mohl adresovat 8086 a uložit jej kdekoliv do 4 GB operační paměťi
+  1) reálný režim (real mode)
+  - režim podobný reálnému režimu předchozích procesorů
+  - používá stejný adresovací mechanismus
+  - stejná maximální velikost operační paměti (1MB)
+  - stejná velikost jednoho segmentu (64kB)
+  2) chráněný režim (protected mode)
+  - podobný chráněnému režimu 80286
+  - používá 32 datovou sběrnici, čili maximální velikost je 4 GB
+  3) virtuální režim (virtual mode)
+  - plně podřízen chráněnému režimu
+  - procesor pracuje podobně jako procesory 8086/8088
+  - má možnost virtualizovat 1MB operační paměti, který mohl adresovat 8086 a uložit jej kdekoliv do 4 GB operační paměťi
