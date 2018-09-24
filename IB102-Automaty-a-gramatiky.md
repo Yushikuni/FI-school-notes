@@ -139,3 +139,52 @@ nebo
 #### Konvence zápisu
 Σ - terminály: a, b, c, .... , 0, 1, ...
 N - neterminály, S, A, B, C, ....
+
+### 2. přednáška - 24. 09. 2018
+
+#### Chomského hierarchie gramatik
+
+Klasifikace podle tvaru přepisovacích pravidel<br />
+
+- typ 0: pravidla v obecném tvaru (frázové gramatiky)
+- typ 1: kontextové gramatiky, nemůže obsahovat pravidla, kdy je |a| <= |b| (levá strana musí být kratší než pravá strana), nedovoluje přítomnost zkracovacích pravidel (např. Ab -> A nebo Abc -> aC
+- typ 2: bezkontextové gramatiky, na levé straně maximálně jeden terminál
+- typ 3: regulární gramatiky 
+- *typ 3 je zároveň typ 2, který je zároveň typ 1, který je "překvapivě" i typ 0*
+ 
+#### Automaty
+- **def**: Deterministický konečný automat (M) je pětice (Q, sigma, ro, q0, F), kde
+  - Q je neprázdná množina stavů
+  - (Sigma) je konečná vstupní abeceda
+  - (delta) Q x E -> parciální přechodová funkce (nemusí být definovaná pro všechny stavy), např. (delta)(q<sub>0</sub>,a) = q2
+  - q0 je počáteční (iniciální stav)
+  - F (subset) množina koncových (akceptujících) stavů (dvě kolečka okolo stavu)
+
+**Zápis tabulkou**        <br />
+   I a  I b
+-----------------
+q0 I q2 I q1              <br />
+q1 I -  I -               <br />
+
+-> q0
+<- q1, q2
+
+**Zápis grafem**
+- stavy označujeme do symbolu kruhu
+- šipky spojují jednotlivé vztahy, využívají přechodové stavy
+ 
+**Rozšířená přechodová funkce**
+- parciální funkce definovaná induktivně vzhledem k délce slova (sigma)^*
+- značí se jako (delta) se stříškou
+- provádí se většinou rekurzivně pro jednotlivé části posloupnosti 
+
+delta se s (q0, abab) =
+1) delta(delta se s(q0, aba), b)
+2) delta(delta(delta se s(q0, ab), a) b)
+3) delta(delta(delta(delta se s(q0, a), b), a), b)
+4) delta(delta(delta(delta(delta se s(q0, epsilon), a), b), a), b)
+
+**Jazyk automatu**
+- množina slov, které automat akceptuje a vedou k tomu, že se automat dostane do některého z konečných stavů
+
+Jazyky, pro které existuje nějaký deterministický automat nazýváme *regulární*.
