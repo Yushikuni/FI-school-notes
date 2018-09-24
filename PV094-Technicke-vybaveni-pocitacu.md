@@ -407,5 +407,6 @@
   - *proces segmentace:*
   - *doplnit screen z prezentace*
   > Princip velmi podobný jako u 80286, položky tabulky deskriptorů produkují 32 bitovou bázovou adresu a sčítáme ji s 32 bitovým offsetem, výsledek je 32 bitová lineární adresa. Pokud má procesor vypnuté stránkování, tak se lineární adresa rovná fyzické, jinak se přechází do procesu stránkování
+  
   - *proces stránkování:*
   > Vezme se lineární adresa a provádíme další transformaci, rozdělíme lineární adresu na tři části (offset, tabulka, adresář = od nejmenšího k nejvyššímu bitu), adresář má 10 bitů, tabulka má 10 bitů, offset má 12 bitů, první vybereme 10 bitů a identifikuje podle něj bázi tabulky, těchto 20 bitů použijeme k identifikaci začátku tabulky stránek, k této tabulce přidáme 10 bitů tabulky, abychom našli bázi stránky, k těmto 20 bitům přičteme ještě 12 bitů offsetu a vzniká 32 bitová fyzická adresa
