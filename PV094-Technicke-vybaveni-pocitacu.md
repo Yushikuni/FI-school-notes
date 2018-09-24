@@ -278,3 +278,99 @@
   - magnetooptické disky
   - ZIP, JAZZ (ZIP mají větší kapacitu, JAZZ jsou menší pevné disky)
 - zařízení připojitelná ke zvukové kartě (reproduktory, mikrofon, syntetizátor)
+
+## 2. přednáška - 24. 09. 2018
+
+### Základní deska
+- označována také jako mainboard či motherboard
+- tvoří základ celého počítače
+- obsahuje zpravidla:
+  - procesor
+  - patici pro numerický koprocesor (dnes už integrován automaticky)
+  - obvody čipové sady (řadič operační paměti, cache paměti, rozšiřující sběrnice, sběrnice USB)
+  - operační paměť
+  - vyrovnávací cache paměť
+  - rozšiřující sběrnice = k rozšíření o další karty
+  - ROM BIOS
+  - CMOS paměť + akumulátor zálohující CMOS paměť (obsahuje program Setup uchovávající nastavení ke spuštění)
+  - hodiny reálného času (řízené krystalem kmitajícím o dané frekvenci
+  - řadič klávesnice
+  - nastavovací propojky (jumpers) a přepínače (switches), dva kontakty kolmo k základní desce, které se mohou či nemusí propojit, což vede ke zkratování a základní nastavení (frekvence procesoru, časování paměťi)
+  - řadič pružných disků
+  - rozhraní pevných disků
+  - řadič diskového pole (RAID) = spojení vícero disků do jednoho velkého disku
+  - řadič USB sběrnice
+  - řadič rozrahní IEEE 1394 (FireWire)
+  - port A.G.P.
+  - grafickou kartu
+  - vstupní/výstupní porty (I/O kartu)
+  - zvuková karta
+  - síťoví karta
+  - AMR (**A**udio **M**odem **R**iser) slot
+
+#### Procesor
+- integrovaný obvod zajišťující funkce CPU
+- tvoří "srdce" a "mozek" celého počítače
+- provdí instrukce programu
+- sychronní zařízení, pracuje s hodinovým kmitem generovaným krystalem umístěným na základní desce
+- do značné míry ovlinuje ovlivňuje výkon celého počítače
+- *"čím rychlejší procesor, tím rychlejší počítač"* (ovlivňuje však i rychlost pevného disku, grafické karty apod.)
+- většinou umístěn na základní desce  
+
+**Parametry procesoru**
+- *frekvence*: počet operací provedených za sekundu
+  - jednotka: Hertz [Hz]
+  - například 4,77 MHz - 4,3 GHz
+  - pokud je základní deska navržena pro různé frekvence procesoru, pak je možno na ní frekvenci nastavit např. pomocí jumpers, switch
+  - *overclocking* = nastavení vyšší frekvence, se zachováním korektní funkce procesoru, než je frekvence pro kterou byl procesor vyroben
+  - je proto třeba dbát na adekvátní chlazení procesoru
+  - v minulosti se základní desky navrhovaly aby pracovaly se stejnou frekvencí jako procesor
+  - současné základní desky pracují s různými frekvencemi
+- *efektivita mikrokódu*: efektivita, se kterou jsou napsány jednotlivé mikroprogramy provádející jednotlivé instrukce procesoru
+  - počet kroků potřebných pro provedení jedno instrukce (např. vynásobení dvou čísel)
+- *numerický koprocesor (FPU)*:
+  - přítomnost (epřítomnost speciální jednotky pro přímé provádění výpočtů v pohyblivé desetinné čárce
+  - je přítomen u všech procesorů Intel80486DX a vyšších (vyjma 80486SX)
+- *počet instrukčních kanálů (pipelines)*:
+  - udává maximální počet instrukcí proveditelnch v jednom taktu procesoru
+  - rozsah: 1 až 4 instrukční kanály
+- *šířka slova*:
+  - maximální počet bitů, které je možné zpracovat během jediné operace
+  - určuje nejvyšší číslo, které může procesor zpracovat v rámci jedné operace
+  - větší čísla musí být rozdělena na menší a zpracována po částech
+- *šířka přenosu dat*:
+  - *doplnit ze slajdů*
+- *L1 (interní), L2 a L3 cache paměť*:
+  - L1, nejmenší kapacita, ale nejrychlejší
+  - např. 0 - 64kB (L1), 0 - 18 MB (L2), 0 - 24,75 MB (L3)
+- *počet jader (cores)*:
+  - počet jednotek (logických procesorů) vykonávajících zpracování instrukcí a dat
+  - procesory Intel podporují *hyperthreading*, což jim umožňuje paralélně zpracovávat instrukce z více zdrojů
+- *velikost adresovatelné paměti*:
+  - velikost paměti, kterou je procesor schopen adresovat (používat)
+  - je dána šířkou adresové sběrnice a způsobem vytváření fyzické adresy
+  - např. 1 MB - 256 TB
+  - Logická (virtuální) adresa --segmentace--> Lineární adresa --stránkování--> Fyzická adresa
+
+**Procesory Intel**
+- *Procesor 4004*:
+  - 4bitový procesor určený pro elektronické kalkulátory
+- *Procesor 8080*:
+  - 8bitový procesor určený pro první 8bitové osobní počítače
+- *Procesor 8086*:
+  - uveden na trh v letech 1979 až 1980
+  - plně 16bitový procesor (šířka slova 16 bitů, šířka přenosu dat 16 bitů)
+  - kompatabilní s procesorem 8080
+  - používán v prvních počítačích PC a PC/XT
+  - vybaven 20bitovou adresovou sběrnicí => velikost adresovatelné paměti 1 MB
+  - dodáván v pouzdrech DIP (**D**ual **I**nline **P**acket) se 40 vývody
+  - je ekvivalentem cca 29 000 tranistorů
+  - logická adresa, sestávající se z segmentu (16 bitů) a offsetu (16 bitů), vezmou se, posunou o čtyři bity (offset se posouvá doleva) a doplní nulami, následně se sečtou a vznikne 20 bitová fyzická adresa
+- *Procesor 8088*:
+  - podobný svému předchůdci
+  - má pouze 8bitovou datovou sběrnici
+  - zaveden z cenových důvodů
+  - levnější, ale pomalejší
+  
+  
+
