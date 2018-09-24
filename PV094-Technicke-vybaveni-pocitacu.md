@@ -403,7 +403,6 @@
   - plně podřízen chráněnému režimu
   - procesor pracuje podobně jako procesory 8086/8088
   - má možnost virtualizovat 1MB operační paměti, který mohl adresovat 8086 a uložit jej kdekoliv do 4 GB operační paměťi
-  <br />
   - *proces segmentace:*
   - *doplnit screen z prezentace*
   > Princip velmi podobný jako u 80286, položky tabulky deskriptorů produkují 32 bitovou bázovou adresu a sčítáme ji s 32 bitovým offsetem, výsledek je 32 bitová lineární adresa. Pokud má procesor vypnuté stránkování, tak se lineární adresa rovná fyzické, jinak se přechází do procesu stránkování
