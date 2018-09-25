@@ -28,5 +28,30 @@
 ```java
 public static void main(String[] args) {  
   System.out.println("Hello, world");
-}```
+}
+```
 
+### Packages
+- reprezentují složení různých tříd, principiélně velmi podobné modulům v C či modulům v JavaScriptu
+- řeší zároveň kolizi mezi jmény tříd až na globální (z hlediska zeměpisného) úrovni
+- daná hierarchie jmen domén
+- prakticky reprezentuje adresářovou hierarchii
+- vkládá se jako první řádek kódu
+```java
+package cz.muni.fi.pb162.lecture2.package1;
+```
+- přidávají se klíčovým slovem *import*
+```java
+import nz.school.package1.M;
+```
+### Konstruktor
+- metoda, paradigma, která se podílí na "dovytvoření" objektu
+- volá se pouze při vytváření objektu, stará se o inicializaci
+- nemá návratový typ
+```java
+public Person(String name, String nick) {
+  this.name = name;
+  this.nick = nick;
+}
+```
+- *this* = odkaz na objekt se kterým právě pracujeme
