@@ -48,6 +48,7 @@ import nz.school.package1.M;
 - metoda, paradigma, která se podílí na "dovytvoření" objektu
 - volá se pouze při vytváření objektu, stará se o inicializaci
 - nemá návratový typ
+- konstruktory se mohou volat navzájem
 ```java
 public Person(String name, String nick) {
   this.name = name;
@@ -55,3 +56,10 @@ public Person(String name, String nick) {
 }
 ```
 - *this* = odkaz na objekt se kterým právě pracujeme
+  - v případě, že this následují kulaté úvozovky (jako volání kontruktoru), tak můžeme třeba zavolat:
+  ```java
+  public Person(String name) {
+    this(name, null)
+  }
+  ```
+  - toto umožní přiřazení jména a nastavení přezdívky jako *null*, musí být na prvním řádku metody
