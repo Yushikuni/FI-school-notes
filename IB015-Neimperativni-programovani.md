@@ -112,7 +112,17 @@ div 92 10
   (>) :: Ord a => a -> a -> Bool
   ```
   - Bere dva argumenty typu *a*, vrací jeden argument typu *Bool* a oba argumenty *a* musí být uspořádatelné
-  
+- => odděluje typové omezení
+
+**Hodnotové konstruktory**
+- (,) = hodnotový konstruktor pro uspořádanou dvojici
+- (,, ... ,) = hodnotový konstruktor pro uspořádanou n-tici
+
+**Zápis seznamu**
+- "ahoj" = ['a', 'h', 'o', 'j'] , jedná se o syntaktickou zkratku
+
+
+
   
   
   
