@@ -49,3 +49,71 @@ div 92 10
 - Větvení pomocí if/else je syntakticky podobné imperativním jazykům (nevyužívají se však složené závorky)
 - *if* je výraz, čili část kódu, která něco vrací
 - else větev je povinná!
+
+### Uspořádané n-tice a seznamy
+
+**N-tice**
+- pevně daný počet nějakých hodnot v pevně daném pořadí
+- prvek kartézského součinu nosných množin
+- používá se, když víme kolik prvků budeme zpracovávat
+- syntax
+  ```haskell
+  ("Hung", "mávicnez10cm")
+  ```
+**Seznam**
+- posloupnost hodnot stejného charakteru (stejného typu)
+- může být prázdná, konečná i nekonečná
+- každých prvek v seznamu je na nějaké (unikátní) pozici
+- používá se, když nevíme kolik prvků budeme zpracovávat
+- syntax:
+  ```haskell
+  [12, 43, -3, 69]
+  ```
+### Hodnoty a typy
+
+**Typ**
+- označení množiny všech hodnot dané kvality
+- slouží k popisu datové struktury
+- silně typovaný jazyk, každá hodnota má svůj typ
+- typy se komponují stejně jako hodnoty
+- konkrétní typy:
+  - Int - vleze se do jednoho slova
+  - Integer
+  - Float
+  - Char
+  - Bool
+- složené typy:
+  - uspořádané n-tice = (Bool, Int)
+  - seznamy [Int], [Char], [[Char]]
+- funkcionální typy:
+  - Integer -> Bool *("baští" Integer a vrací Bool)*
+  - Float -> Float -> Float *("baští" dva Float a vrací Float)*
+  - -> znamená transformaci
+  - *poslední za šipkou je výstup, všechno ostatní jsou vstupy*
+ 
+**Arita funkce**
+- označuje počet parametrů funkce
+- nulární (0), unární (1), duální (2), ternární (3)
+ 
+**Polymorfní typy**
+- některé funkce nepotebují znát konkrétní typ forálních parametrů, stačí znát jejich strukturu
+- typová proměnná se specializuje až při dosazení
+
+**Typové třídy**
+- některé funkce nevyžadují konkrétní typ, zároveň nedovolují použití libovolného typu, je třeba omezit třídu typů
+- typové třídy:
+  - Integral = celočíselné
+  - Num = numerické
+  - Ord = uspořádané
+  - Eq = porovnatelné na rovnost
+  - př.
+  ```haskell
+  Prelude> :t (>)
+  (>) :: Ord a => a -> a -> Bool
+  ```
+  - Bere dva argumenty typu *a*, vrací jeden argument typu *Bool* a oba argumenty *a* musí být uspořádatelné
+  
+  
+  
+  
+
