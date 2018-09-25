@@ -120,10 +120,26 @@ div 92 10
 
 **Zápis seznamu**
 - "ahoj" = ['a', 'h', 'o', 'j'] , jedná se o syntaktickou zkratku
+- operátor (*:*), přijímá atribut a seznam a připojuje atribut na začátek seznamu, prakticky operace *zřetězení*
+  - přijímá pouze atributy stejného typu (přiřadí číslo do pole plného čísel)
+```haskell
+(:) 3 [3,3,3] -> [3,3,3,3]
+(++) "Ahoj" "svete!" -> "Ahoj svete"
+```
+- alternativní zápis zřetězení:
+```haskell
+Prelude> null [3,4]
+False
+```
 
+**Funkce null**
+. vrací *True* pokud je seznam prázdný a *False* pokud je seznam neprázdný
+```haskell
+null [] = True
+```
 
-
-  
+### Rekurze
+- definice funkce, nebo datové struktury, s využitím sebe sama
   
   
 
