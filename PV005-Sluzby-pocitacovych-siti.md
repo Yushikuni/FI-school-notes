@@ -1,3 +1,34 @@
+## 1. odpovědník
+Každý z odpovědníků předmětu Služby počítačových sítí musím od jeho otevření úspěšně složit do
+- tří týdnů
+
+Základní informace o počítačových službách FI pro začínající studenty najdu v materiálu
+- https://www.fi.muni.cz/tech/zaciname-s-fi.pdf
+
+Dostupné technické informace jsou na webu FI ve složce
+- https://www.fi.muni.cz/tech/
+
+Jednosměrnou šifrovací funkcí (bez možnosti dešifrování) je v is.muni.cz uloženo heslo
+- primární
+
+E-mailová adresa každého uživatele is.muni.cz má internetovou doménu
+- mail.muni.cz
+
+Fakultní login (přihlašovací jméno) je tvořen z
+- příjmení uživatele
+
+Přímý vstup do Fakultní administrativy FI je na adrese
+- https://fadmin.fi.muni.cz/
+
+Každý student FI má e-mailovou adresu
+- login@fi.muni.cz
+
+Které heslo je typicky náročnější uhodnout?
+- correct horse battery staple
+
+Která z činností je v počítačové síti FI povolena?
+- stahování záznamů přednášek
+
 ## 2. odpovědník
 Masarykova univerzita je připojena k celosvětové síti provozované sdružením
 - CESNET
