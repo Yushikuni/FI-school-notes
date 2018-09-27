@@ -1,3 +1,4 @@
+## 2. odpovědník
 Masarykova univerzita je připojena k celosvětové síti provozované sdružením
 - CESNET
 
@@ -15,7 +16,6 @@ Protokol IP (Internet Protocol) zaručuje či nezaručuje, že se datové bloky 
 
 Protokol TCP (Transmission Control Protocol) zaručuje či nezaručuje, že se datové bloky přenesou všechny, ve správném pořadí, bez duplicit a se správným obsahem?
 - zaručuje
-
 
 IP směrovač (router) musí mít (vyberte nejsprávnější odpověď, vezměte v úvahu pouze technologie, které byly zmíněny na přednášce)
 - alespoň dva síťové adaptéry
