@@ -137,9 +137,27 @@ False
 ```haskell
 null [] = True
 ```
-
 ### Rekurze
 - definice funkce, nebo datové struktury, s využitím sebe sama
-  
-  
+
+### Implicitní závorkování a aplikace funkce
+- typový konstruktor *->* implicitně sdružuje zprava
+- aplikace funkce implicitně sdružuje zleva
+- s každou aplikací funkce ubude jeden výskyt -> z tohoto výrazu
+
+**Částečná aplikace**
+- pokud má funkce více formálních parametrů, pak probíhá částečná aplikace vždy od parametru nejvíce vlevo
+- funkci však nelze částečně aplikovat na jiný než první parametr
+
+**Funkce _flip_**
+- *flip není jen prohazovačka argumentů*
+- flip je modifikátor binární funkce
+```haskell
+Prelude> (/) 3 4
+0.75
+Prelude> flip (/) 3 4
+1.333333333
+```
+
+
 
