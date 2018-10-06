@@ -80,3 +80,40 @@ V zápisu IP adresy v4 jsou bajty vyšších řádů
 
 V IP adrese v4 je v bajtech vyšších řádů
 - adresa sítě
+
+## 3. odpovědník
+Dynamicky se IP adresy v lokální síti (např. po připojení do WiFi sítě) přidělují protokolem
+- Dynamic Host Configuration Protocol (DHCP)
+
+MAC adresa cíle v lokální síti se zjišťuje protokolem
+- ARP Address Resolution Protocol
+
+Adresa v doménovém tvaru má nejvyšší doménu
+- vpravo
+
+Proces dotazování při převodu adresy v doménovém tvaru na IP adresu začíná (není-li adresa v cache počítače nebo nameserveru)
+- u kořenového nameserveru
+
+Adresu kořenového nameserveru
+- má každé zařízení uloženou už z výroby
+
+Správce spravuje informace o počítačích v doméně manuálně v
+- primárním nameserveru
+
+IP směrovač ve směrovací tabulce po svém zapnutí má
+- pouze informace o přímo připojených sítích ručně zadané správcem
+
+IP směrovač se učí tj. doplňuje do směrovací tabulky další informace
+- posloucháním směrovacích tabulek od jiných směrovačů
+
+IP směrovač svoji směrovací tabulku ostatním směrovačům v síti poskytuje
+- všesměrovým vysíláním 
+
+Který protokol je vhodnější pro (on-line) přenos videa a zvuku?
+- UDP (User Datagram Protocol), který je nespolehlivý (tj. nezaručuje doručení všech datových bloků)
+
+Služba 'ping' pro ověření dostupnosti počítače konkrétní adresy používá protokol
+- ICMP (Internet Control Message Protocol)
+
+Konkrétní stroj je adresovaný IP adresou. Čím se však v komunikačním protokolu rozliší aplikační služba, kterou po stroji požaduji?
+- předáním čísla portu
