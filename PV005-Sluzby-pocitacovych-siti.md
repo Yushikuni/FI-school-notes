@@ -117,3 +117,43 @@ Služba 'ping' pro ověření dostupnosti počítače konkrétní adresy použí
 
 Konkrétní stroj je adresovaný IP adresou. Čím se však v komunikačním protokolu rozliší aplikační služba, kterou po stroji požaduji?
 - předáním čísla portu
+
+## 4. odpovědník
+E-maily se od odesílatele k příjemci doručují protokolem
+- Simple Mail Transfer Protocol (SMTP)
+
+Přístup k dopisům doručeným do poštovní schránky neposkytuje protokol
+- Simple Mail Transfer Protocol (SMTP)
+
+Dle RFC 822 (Internet Message Protocol) obsahuje internetová zpráva hlavičky a tělo. Čím je odděleno tělo od hlaviček?
+- prázdným řádkem
+
+Smí mít jedna položka z hlaviček obsah na více řádcích?
+- ano, pokračovací řádek musí mít v prvním sloupci bílé místo (mezeru)
+
+Jaký je správný zápis adresy v hlavičce?
+- Ferda Mravenec <ferda@mraveniste.cz>
+
+Jaký je správný zápis adresy v hlavičce?
+- ferda@mraveniste.cz (Ferda Mravenec)
+
+Ve fyzickém těle dopisu smí být
+- pouze text
+
+Primární a sekundární adresáti dopisu jsou popsáni v hlavičkách
+- To a Cc
+
+Způsob kódování binárních dat do textové podoby Base64
+- převádí tři bajty s libovolným obsahem na čtyři bajty s textem
+
+MIME (Multipurpose Internet Mail Extensions) zavádí symbolické označení typu obsahu souboru. Pro soubor obsahující obrázek ve formátu PNG se použije označení
+- image/png
+
+Určení použitého kódování uloženého textu se specifikuje v MIME hlavičce
+- Content-Type: text/html; charset=utf8
+
+Není-li v hlavičkách dopisu s tělem obsahujícím text s diakritikou specifikován charset
+- je to katastrofa
+
+Zacyklení při doručování dopisu se pozná podle
+- množství hlaviček Received
