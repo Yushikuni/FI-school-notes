@@ -157,3 +157,70 @@ Není-li v hlavičkách dopisu s tělem obsahujícím text s diakritikou specifi
 
 Zacyklení při doručování dopisu se pozná podle
 - množství hlaviček Received
+
+## 5. odpovědník
+Původní varianta protokolu HTTP se dnes nazývá
+- 0,9
+
+Při použití metody GET a HTTP/1.0 nebo novějšího posílá klient
+- prázdné tělo požadavku, jen hlavičky
+
+V HTTP/1.0 a 1.1 jsou hlavičky od těla odděleny
+- prázdným řádkem
+
+CGI program, zpracovávající požadavek metodou POST čte prohlížečem zaslané parametry metody POST
+- ze standardního vstupu
+
+Pokud jako první řádek HTTP požadavku uvede klient "GET /", jedná se o protokol verze
+- 0,9
+
+Požaduje-li klient URL http://server.cz/cgi-bin/skript.cgi/x.html?a=b, bude mít skript.cgi v proměnné PATH_INFO hodnotu
+- /x.html
+
+Požaduje-li klient URL http://server.cz/cgi-bin/skript.cgi/x.html?a=b, bude mít skript.cgi v proměnné QUERY_STRING hodnotu
+- a=b
+
+Požaduje-li klient URL http://server.cz/cgi-bin/skript.cgi/x.html?a=b, bude mít skript.cgi v proměnné SCRIPT_NAME hodnotu
+- /cgi-bin/skript.cgi
+
+Stavový kód tvaru 2xx obvykle znamená
+- úspěšné provedení požadavku
+
+Stavový kód tvaru 3xx obvykle znamená
+- neúspěšné provedení požadavku, připadně s odkazem na alternativní URL
+
+Stavový kód tvaru 4xx obvykle znamená
+- chybu v klientově požadavku
+
+Stavový kód tvaru 5xx obvykle znamená
+- interní chybu serveru
+
+Preferuje-li klient dokumenty v českém jazyce, dá to najevo v HTTP hlavičce Accept-Language: s hodnotou
+- cs, *
+
+Informace o znakové sadě, ve které je předávaný dokument, by se přednostně měla uvádět
+- v HTTP hlavičce Content-Type
+
+Architektura SSL neumožňuje
+- rozumně realizovat virtuální HTTPS servery na téže IP adrese
+
+SSL certifikát je
+- veřejný klíč HTTP serveru a jeho jméno, dohromady podepsané tajným klíčem certifikační autority
+
+IPv6 adresa má délku
+- 128 bitů
+
+Link-local adresy mají prefix fe80::/10. Jaká je numericky nejvyšší link-local adresa:
+- febf:­ffff:­ffff:­ffff:­ffff:­ffff:­ffff:­ffff
+
+Pro zpětnovazebné rozhraní se v IPv6 používá adresa
+- ::1
+
+IPv6 definuje právě následující způsoby přenosu:
+- unicast, multicast, anycast
+
+Jaký je nejkratší zápis IPv6 adresy 3ffe:­ffff:0273:0000:0042:0000:0000:5fdc?
+- 3ffe:­ffff:273:0:42::5fdc
+
+Používáme-li adresu ve formátu EUI-64, je lokální část adresy
+- stejně dlouhá jako nelokální část adresy
