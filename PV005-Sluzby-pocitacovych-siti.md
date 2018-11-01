@@ -224,3 +224,41 @@ Jaký je nejkratší zápis IPv6 adresy 3ffe:­ffff:0273:0000:0042:0000:0000:5fd
 
 Používáme-li adresu ve formátu EUI-64, je lokální část adresy
 - stejně dlouhá jako nelokální část adresy
+
+## 7. odpovědník
+
+Kolik nafty standardně neobsahuje nádrž pro motor DUPS?
+- 2,5 metrů kubických
+
+Kolik vstupních napájecích větví má STS?
+- 2
+
+Proč jsou na počítačových sálech umístěny STS?
+- ke zvýšení odolnosti jednozdrojových serverů/spotřeb vůči výpadku
+
+Co se nachází pod dvojitou podlahou v počítačových sálech?
+- potrubí dopravující chladící vodu mezi počítačovými sály a strojovnou chlazení
+
+Kde na fakultě se nacházejí STOP tlačítka?
+- na recepci
+
+Jak rychle by v praxi stoupala teplota v datacentru FI, pokud by jsme náhle vypli chlazení?
+- asi 1 stupeň Celsia za minutu
+
+Proč na fakultě používáme u chladícího systému datacenter nižší teplotní gradient než ten, na který byl systém dimenzovaný?
+- chlazení tímto způsobem je energeticky efektivnější
+
+Které tvrzení o režimech strojovny chlazení platí?
+- plné strojní chlazení spotřebovává více energie než freecooling
+
+Kolik hran má Kybernetický polygon? (Internet napoví.)
+- 7
+
+K čemu slouží požární klapky?
+- uzavírají vzduchotechnická potrubí, aby zabránily přívodu vzduchu do místa požáru a šíření požáru do jiných oblastí
+
+Na jakém systému běží fakultní router?
+- rackový server a Linux
+
+Umožňuje Raspberry Pi standardně napájení přes PoE (Power over Ethernet)?
+- ne
