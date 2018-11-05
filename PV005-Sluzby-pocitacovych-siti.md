@@ -225,6 +225,83 @@ Jaký je nejkratší zápis IPv6 adresy 3ffe:­ffff:0273:0000:0042:0000:0000:5fd
 Používáme-li adresu ve formátu EUI-64, je lokální část adresy
 - stejně dlouhá jako nelokální část adresy
 
+## 6. odpovědník
+Výhodou síťového modelu pracovní skupina NENÍ
+- Škálovatelnost
+
+Řadičem domény může být
+- Počítač s Windows Server 2016 povýšený jako řadič domény
+
+Alternativní síťová konfigurace se používá,
+- když je nastavené získávání IP adresy z DHCP serveru, v případě, že DHCP server neodpoví nebo nepřidělí adresu
+
+Co platí o Alternativní konfiguraci sítě ve Windows?
+- Využije se, pokud je nakonfigurována a počítač nedostane konfiguraci od DHCP serveru.
+
+Které tvrzení platí o IP?
+- IP je primárně zodpovědné za adresování a směrování paketů mezi počítači.
+
+Které tvrzení platí o TCP?
+- TCP poskytuje spojovanou spolehlivou komunikaci po síti.
+
+Které z následujících tvrzení platí o ARP
+- ARP je protokol v síťové vrstvě, mapuje IP adresy na MAC adresy.
+
+Co je platná maska podsítě:
+- 255.255.255.240
+
+Které tvrzení správně popisuje IPv4adresu:
+- 192.168.0.108 je příklad IP adresy třídy C.
+
+Jak vypadá adresa nakonfigurovaná procesem Automatic Private IP Addressing (APIPA)?
+- 169.254.x.y
+
+V jakých profilech se může nacházet Windows 8 Firewall?
+- Domain, Private, Public
+
+Co platí o Network Discovery v systému Windows 8?
+- Je typicky zakázané v Network Location typu Public.
+
+Máme přidělenou síť od ISP 208.147.66.0/24, rozhodli jsme se ji rozdělit na 4
+stejné podsítě, kde každá může obsahovat minimálně 50 stanic.
+Která z uvedených podsítí je příkladem jedné z těchto 4 podsítí?
+- 208.147.66.192/26
+
+Kolik počítačů můžete mít zapojené v IPv4 síti, jejíž adresa je 172.16.0.0/22
+- 1022
+
+Kliknu-li ve Windows 10 po připojení do nové sítě v dialogu "Do you want to allow your PC to be discoverable by other PC's and devices on this network?
+na tlačítko "Yes",
+bude počítač zapojený v síti typu:
+- Private
+
+Vrstva L3 se v TCP/IP modelu nazývá:
+- Internet
+
+Na jaké vrstvě ISO/OSI modelu sítě pracuje směrovač (Router)?
+- L3 Network
+
+Protokol SMB je:
+- Client/Server protokol pro sdílení souborů po síti, ustanovující typicky dlouhodobější spojení.
+
+Povolím-li ve Windows 10 pomocí tlačítka "Turn on media streaming" v Media streaming options v Network and Sharing Center možnost zobrazovat dané zařízení v lokální síti , pak platí, že:
+- Počítač je schopen v síti komunikovat jako DLNA server a umožňuje přehrávat např. mp3 soubory v AV zařízení připojené do domácí sítě.
+
+UDP protokol je narozdíl od TCP: 
+- Umožňuje rychlejší přenos dat
+
+Počítač v kanceláři ve firemní síti přestal komunikovat s Internetem, z výpisu příkazu ipconfig
+zjistím, že má nastavenou IP adresu 169.254.1.1, počítač má nastaveno přidělování adresy z DHCP serveru.
+Co je příčinou problému?
+- DHCP server není na síti dostupný a vypršela doba platnosti konfigurace síťového rozhraní
+
+UTP kabel v přímém zapojení má na konektoru RJ45 dle číslování pinů konektoru od 1 do 8 (z leva, mám-li zobáček vespod)
+na obou stranách kabelu stejné zapojení drátů dle barev:
+- 1: bílo oranžový, 2: oranžový, 3: bílo zelený, 4: modrý, 5: bílo modrý, 6: zelený, 7: bílo hnědý, 8: hnědý
+
+DLNA umožňuje:
+- Jednoduché sdílení multimédií v domácí síti.
+
 ## 7. odpovědník
 
 Kolik nafty standardně neobsahuje nádrž pro motor DUPS?
