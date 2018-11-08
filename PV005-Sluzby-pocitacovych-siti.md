@@ -339,3 +339,43 @@ Na jakém systému běží fakultní router?
 
 Umožňuje Raspberry Pi standardně napájení přes PoE (Power over Ethernet)?
 - ne
+
+## 8. odpovědník
+S mírnou nadsázkou platí, že webová stránka či aplikace je hotová, když…
+- …už z ní není co odebrat.
+
+Copywriter je:
+- „Prodavač za psacím stolem“ odpovědný za poutavou podobu textového obsahu. 
+
+Cílem testování použitelnosti je…
+- …odhalit překážky, které brání uživatelům splnit úkol na testovaném webu, tj. použít ho k zamýšlenému účelu.
+
+Designová hlavička stránky…
+- …pomáhá identifikovat stránku jako součást webu, obsahuje jméno/logo webu s odkazem na titulní stranu, často také vyhledávací políčko a horizontální navigaci.
+
+Většinu času tráví uživatel…
+- …na cizích webových stránkách (protože průměrná session je jen pár stránek během několika málo minut).
+
+Z nabízených odpovědí je pro navigaci nejméně podstatné, že…
+- …je umístěna horizontálně nebo vertikálně. 
+
+Vyberte nesprávné tvrzení:
+- Počet registrovaných domén, celosvětově jich je zhruba 300 mil., odpovídá počtu webů.
+
+Pro psaní textů pro web platí řada doporučení. Vyberte nesprávné:
+- Obsah textu je vhodné psát stylem úvod, zápletka, rozuzlení, aby to nejdůležitější bylo uvedeno až v závěru, když má čtenář všechny informace.
+
+Vyberte nesprávné tvrzení o testování použitelnosti:
+- Čím více uživatelů otestujeme najednou, tím lépe.
+
+Čím má smysl začít realizaci nového webu?
+- Nejdříve analyzovat obsah a vytvořit zadání. 
+
+Co je dobrým cílem při tvorbě grafiky webu?
+- Identita (jedinečnost) a důvěryhodnost. 
+
+K čemu nejsou dobré drátěné modely (wireframes)?
+- Lze s jejich pomocí rychle web dokončit a spustit.
+
+Vyberte nesprávné tvrzení:
+- Dobrý styly textu pro webovou stránku je esej, román anebo vyprávění. 
