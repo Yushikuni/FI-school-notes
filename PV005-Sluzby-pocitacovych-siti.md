@@ -379,3 +379,49 @@ K čemu nejsou dobré drátěné modely (wireframes)?
 
 Vyberte nesprávné tvrzení:
 - Dobrý styly textu pro webovou stránku je esej, román anebo vyprávění. 
+
+## 9. odpovědník
+Myslíme-li to vážně, po uvedení nového webu do provozu…
+- …bychom se měli zaměřit na analýzu, optimalizaci a efektivní propagaci.
+
+Vyberte správné tvrzení (přístupnost):
+- Webová stránka bez přímého příkazu uživatele nemanipuluje uživatelským prostředím.
+
+Vyberte správné tvrzení (přístupnost):
+- Obsah ani kód webové stránky nepředpokládá, že uživatel již navštívil jinou stránku. Tj. každá stránka "funguje" samostatně.
+
+U dobrých redakčních systémů neplatí:
+- Nelze je dále rozšiřovat přidáním modulů (ať už vyvinutých třetí stranou nebo mnou).
+
+Vyberte nejlepší dokončení věty: Uvedením webu do provozu práce nekončí, naopak začíná…
+- …analýza, optimalizace a propagace webu. 
+
+Při analýze návštěvnosti sledujeme především…
+- …trend vybraných ukazatelů, např. zda se snižuje míra okamžitého opuštění (bounce rate) a zvyšuje průměrná doba návštěvy.
+
+Konverze je...
+- …měřitelná akce návštěvníka webu, jejímž vykonáním se stává zákazníkem. 
+
+Vyberte nesprávné tvrzení. Vysoká návštěvnost webu je dobrá...
+- …vždy, hlavně když je zadarmo. 
+
+Při použití JavaScriptového měřícího kódu (webového analytického nástroje, např. Google Analytics)…
+- …je možné zjistit více údajů než je zaznamenáno v logu webového serveru.
+
+V článku Web Design is Dead autor doporučuje:
+- …podřídit design tomu, co v daném kontextu funguje a měřením je ověřeno.
+
+U webu typu blog se záměrem vybudovat komunitu pravidelných čtenářů očekáváme:
+- vysoké procento vracejících se návštěvníků 
+
+Tzv. referrer, tj. adresa, ze které se návštěvník dostal na danou webovou stránku,…
+- …je (nepovinnou) součástí HTTP požadavku na webový server.
+
+Mezi funkce Google Analytics nepatří možnost:
+- zobrazení barevného zvýraznění stránky podle toho, kde na ní návštěvníci klikají (tzv. teplotní mapa)
+
+Mezi funkce Google Analytics nepatří možnost:
+- zaznamenávání přístupů i z prohlížečů bez JavaScriptu a cookies
+
+Google Analytics IQ je:
+- zkouška a osobní certifikace (Individual Qualification) prokazující znalosti GA.
