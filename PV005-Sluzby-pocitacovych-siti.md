@@ -425,3 +425,58 @@ Mezi funkce Google Analytics nepatří možnost:
 
 Google Analytics IQ je:
 - zkouška a osobní certifikace (Individual Qualification) prokazující znalosti GA.
+
+## 10. odpovědník
+Pro ladění webové stránky (aplikace) není vhodné použít:
+- alternativní interprety JavaScriptu
+
+AJAX umožňuje:
+- změnu údajů v HTML stránce bez nutnosti jejího kompletního znovunačtení
+
+Pro 2D grafiku je v HTML 5 k dispozici <canvas> a <svg>. Vyberte z jejich porovnání nepravdivé tvrzení:
+- SVG a canvas se téměř neliší a jsou vhodné na stejné malování
+
+Pro 2D grafiku je v HTML 5 k dispozici <canvas> a <svg>. Vyberte z jejich porovnání nepravdivé tvrzení:
+- 3D grafika renderovaná pomocí WebGL využívá canvas i SVG
+
+Označení odkazů pomocí rel="nofollow" se hodí na:
+- označení odkazů vložených třetí stranou, které mají vyhledávače ignorovat
+
+CSS3 nedovolí deklarovat styl pro:
+- okno webového prohlížeče (window-*)
+
+CSS3 nedovolí deklarovat styl pro:
+- dialogová okna prohlížeče (alert)
+
+Z následujícího seznamu metadatových mikroformátů, které lze používat pro označení informací na webové stránce pro zvýšení sémantiky a podporu strojového zpracování, je součástí návrhu standardu HTML5 tento:
+- Microdata
+
+Vyberte nepravdivé tvrzení o metadatech dávajících význam údajům na webové stránce:
+- Metadata jsou připojena jako externí soubor webové stránky (<link rel="meta-*"...).
+
+Mezi přednosti využití CDN (Content Delivery Network), pro vložení např. JavaScriptového rámce jQuery nebo webového fontu do HTML stránky, nepatří:
+- Snížení počtu převodů doménového jména na IP adresu prohlížečem (hint: navíc je CDN doména)
+
+Mezi typická využití JavaScriptového rámce nepatří:
+- měření návštěvnosti webové stránky
+
+Vyberte nepravdivé tvrzení o JS frameworku jQuery:
+- Framework jQuery nemá konkurenci a je jedinečný v tom, jak dokáže usnadnit programování v JavaScriptu.
+
+Vyberte nepravdivou část věty: Responsive Web Design reaguje na množství (mobilních) zařízení přistupujících dnes k Webu tak, že…
+- vyžaduje JavaScript
+
+Dalším logickým stupněm vývoje Webu (tj. hypertextově propojených dokumentů), jak jej nazval Tim Berners-Lee, je…
+- …Giant Globe Graph (tj. propojení abstraktnějších objektů).
+
+Další vývoj webu očekáváme s dostupností kvalitativně lepších informací. Současná podoba není zatím dostatečná např. pro programování autonomních agentů. Jde o…
+- …sémantiku (popis významu) prezentovaných dat a vztahů mezi nimi.
+
+Sémantický web…
+- …je souhrné označení pro metody a technologie, které umožní strojové porozumění významu informací na Webu.
+
+Propojení dat je nezbytné pro vznik sémantického webu. Proto existuje schematické doporučení 5stardata.info. Co nepatří mezi nezbytné kroky pro "zisk všech 5 hvězdiček"?
+- Omezení přístupu pomocí autentizace.
+
+Mezi typická data na webové stránce, které je vhodné označit metadaty, nepatří:
+- Vyznání, např. přihlášení k víře, náboženství.
