@@ -480,3 +480,34 @@ Propojení dat je nezbytné pro vznik sémantického webu. Proto existuje schema
 
 Mezi typická data na webové stránce, které je vhodné označit metadaty, nepatří:
 - Vyznání, např. přihlášení k víře, náboženství.
+
+## 11. odpověď
+Jaké nástroje používají správci pro správu Windows prostředí na FI?
+- Active Directory
+- Powershell
+- Windows Admin Center
+
+Jaké jsou hlavní výhody použití gMSA účtů?
+- Ochrana proti kerberoastingu
+- Heslo má délku 120 znaků
+- Heslo se automaticky mění po 30 dnech
+
+Jaké jsou nevýhody nástroje System Center Confguration Manager
+- Neumí zabalit jakýkoli instalátor do MSI a umožnit tak silent
+- Neumí spravovat klienty za NATem
+- Jde o placený software
+
+K čemu se vztahuje zkratka DC v Active Directory?
+- Domain Controller
+
+Co není součástí nástroje System Center Configuration Manager?
+- Správa Active Directory
+
+Jakým nástrojem je řízen Windows Update?
+- Windows Update for Business (GPO)
+
+Lze při zapnutí ochrany Credential Guard provozovat na stejném stroji
+- Ne
+
+K čemu slouží LAPS?
+- Automatická změna hesla builtin administrátorského účtu
