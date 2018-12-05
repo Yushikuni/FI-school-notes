@@ -511,3 +511,67 @@ Lze při zapnutí ochrany Credential Guard provozovat na stejném stroji
 
 K čemu slouží LAPS?
 - Automatická změna hesla builtin administrátorského účtu
+
+## 12. odpovědník
+Mezi nejdůležitější charakteristiky Cloud computingu se nezařazuje
+- decentralizovaná správa
+
+Vyberte nepravdivé tvrzení o SaaS
+- možnost vytváření vlastních aplikací
+
+Vyberte nepravdivé tvrzení o PaaS
+- pronájem HW prostředků
+
+Vyberte nepravdivé tvrzení o IaaS
+- poskytnutí výpočetní platformy jako služby
+
+Cloud computing se dělí na tři servisní modely:
+- SaaS, PaaS, IaaS
+
+Implementační cloudový model, u kterého kdokoliv může použít službu, se nazývá
+- veřejný cloud
+
+Implementační cloudový model, u kterého je služba určená pouze pro určitou skupinu uživetelů, se nazývá
+- soukromý cloud
+
+Grid computing není
+- pronájem infrastruktury jako služby pro využití v akademickém prostředí
+
+Aplikační server je
+- server, na kterém běží instance programu
+
+Jednou z vlastností služeb není
+- stálost
+
+Princip, u kterého jedna instance SW běžící na serveru je pro poskytována více klientům, se nazývá:
+- multi-tenancy
+
+Jak se nazývá ekonomický model, pro který je typické "platím, kolik využiju"?
+- Pay Per Use
+
+Co je to SLA (Service Level Agreement)
+- dokument, dohoda o úrovni poskytovaných služeb
+
+Která z následujících služeb není integrována v ISu?
+- IBM Notes Traveler
+
+Vyberte nepravdivé tvrzení o službě ownCloud
+- OwnCloud je freemium software.
+
+Jaké SLA dosáhly Office 365 služby ve druhém čtvrtletí roku 2015?
+- 99.95%
+
+K čemu slouží Graph API?
+- K získávání informací z cloudových služeb společnosti Microsoft
+
+Jaká služba není součástí Office 365.
+- Google Drive
+
+Jakou formu autentizace mimo jiné používají v Microsoft datacentrech?
+- Otisk dlaně.
+
+Co je příkladem hybridního cloudu?
+- Microsoft Azure Stack
+
+Na jaké SLA se dá dosáhnout v rámci samostatného virtuálního stroje v Azure?
+- 99,9%
