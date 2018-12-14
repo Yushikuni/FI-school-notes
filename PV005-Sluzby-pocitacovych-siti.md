@@ -575,3 +575,52 @@ Co je příkladem hybridního cloudu?
 
 Na jaké SLA se dá dosáhnout v rámci samostatného virtuálního stroje v Azure?
 - 99,9%
+
+## 13. odpovědník
+
+Na fakultních linuxových stanicích v učebnách se používá:
+- Ubuntu 18.04
+
+Vyberte činnosti, které jsou při práci se stanicemi v učebnách zakázané:
+- odpojení monitoru 
+- restart stroje bez nahlášení správcem
+
+Na jaké adrese provozujeme veřejný NTP server?
+- pyrrha.fi.muni.cz
+- time.fi.muni.cz
+
+Vyberte pravdivé tvrzení:
+- Fakultní FTP mirror server běží na serveru Odysseus.
+
+Které z těchto databáz zpřístupňujeme studentům jako službu?
+- Oracle
+- MySQL
+
+Napadnutí kterého webového redakčního systému jsme odhalili v roku 2018? Hint: Hledejte v našem blogu.
+- Drupal
+
+Která z následujících zkratek nepředstavuje webovou bezpečnostní technologii?
+- MTA-STS
+
+Která z následujících adres není oficiální kontaktní adresou pro technickou podporu na FI?
+- support@fi.muni.cz
+
+Kolik RAM má k dispozici server Aisa?
+- 512 GB
+
+Jaké vyhledávání se používá na webu FI?
+- Google
+- IS
+-Ctrl+F
+
+Podle čeho vybíráme názvy serverů a strojů na FI?
+- Postavy řecké a římské mytologie
+
+Pod jakým URL můžete mít své vlastní webové stránky?
+- https://www.fi.muni.cz/~xlogin/
+
+Jaké techniky a nástroje používáme při boji se spamem?
+- SpamAssassin 
+- greylisting
+- DSPAM
+- obfuskaci adres na oficiálním webu
