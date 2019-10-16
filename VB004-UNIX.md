@@ -152,3 +152,4 @@ done
 :1,$s/^\([^:]*\):\([^:]*\):\([^:]*\):\([^:]*\):\(.*\)$/\4:\2:\1:\3:\5/
 :x
 ```
+ajó tak tak se to dělá, stačí kliknout na tušku :D že mě to nenapadlo, stejně jako s těma blbýma závorkama ve cvičení 5 :D
